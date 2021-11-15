@@ -117,6 +117,24 @@ def generic_villian_name_here():  # boss spot in forbidden seas, evil pirate
 
 
 def castle_trader():  # place in castle village
+    print("'Traveler come check out my goods.'")
+    sleep(1)
+    print("'WAIT!! I know you! Looks like we both made passage to the castle!")
+    sleep(1)
+    cta = input("'Hope your adventures have been as well as mine. Want to take a look at my updated inventory?'\n"
+          "yes or no?")
+    if cta == "yes" or cta == "Yes" or cta == "YES":
+        print("Very well then..")
+        sleep(1)
+        castle_trader_inventory()
+    elif cta == "no" or cta == "No" or cta == "NO":
+        print("Come back anytime old friend. Ill be here")
+        sleep(1)
+        cv()
+    else:
+        print("Seems to me like you still have that hearing problem. ")
+        sleep(1)
+        castle_trader()
 
 
 
@@ -154,7 +172,18 @@ def cerberus():  # either use with "help" or as a guide for entering castle town
         sleep(1)
         print("Woah it talks")
         sleep(1)
-        print
+        print("'You're the first person to offer me help thank you, my master will be pleased to meet you.")
+        sleep(1)
+        cg()
+    elif cera == "no" or cera == "No" or cera == "NO":
+        print("'Please sir, please I need help'")
+        sleep(1)
+        print("GET OUT OF HERE DOG!")
+        sleep(1)
+        cg()
+    else:
+        print("Am I dreaming... I should rethink this. ")
+        cerberus()
 
 
 def thief():  # put in slums when swiping "random number 5-10" gold or coins from player
