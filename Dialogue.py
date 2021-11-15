@@ -132,7 +132,7 @@ def chasm_boss():#"Darkness" name of boss, place in mysterious chasm., spits out
     print("No, no, no, no, no... This can't be happening!!! For your triumph over me you get (generic item)")
 
 
-def persephone():  # place in persephone's pass john want to give this a shot at the dialogue
+def persephone():  # place in persephone's pass, john want to give this a shot at the dialogue
 
 
 def pirates():  # place in port
@@ -148,6 +148,13 @@ def charon():  # place in cypruss graveyard
 
 
 def cerberus():  # either use with "help" or as a guide for entering castle town differently to get to the castle
+    cera = input("This dog looks lost... do you want to help him? yes or no? ")
+    if cera == "yes" or cera == "Yes" or cera == "YES":
+        print("'Thank you so much sir'")
+        sleep(1)
+        print("Woah it talks")
+        sleep(1)
+        print
 
 
 def thief():  # put in slums when swiping "random number 5-10" gold or coins from player
