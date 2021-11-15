@@ -8,16 +8,17 @@ class items:
 
 #forest
 #from yggdrasil
-def boat():
+def boat1():
     nameme = 'Boat'
     hp = 0
     dfn = 0
     atk = 0
     boat = items(nameme, hp, dfn, atk)
     return boat
+boat = boat1()
 
 #from maze
-def mhead():
+def medhead():
     nameme = 'Medusas Head'
     hp = 0
     dfn = 20
@@ -26,7 +27,7 @@ def mhead():
     print(mhead.name)
     print(mhead.name,'gives you',mhead.dfn, 'defence.')
     return mhead
-
+mhead = medhead()
 
 #ocean
 #magic conch
@@ -35,8 +36,9 @@ def m_c():
     hp = 0
     dfn = 0
     atk = 0
-    m_c = items(nameme, hp, dfn, atk)
-    return m_c
+    mc = items(nameme, hp, dfn, atk)
+    return mc
+mc = m_c()
 
 #pirate hat that comes from the
 def phat():
@@ -46,6 +48,7 @@ def phat():
     atk = 0
     pihat = items(nameme, hp, dfn, atk)
     return pihat
+pihat = phat()
 
 #Shark Fin
 def Sharkfin():
@@ -55,6 +58,7 @@ def Sharkfin():
     atk = 0
     sharkfin = items(nameme, hp, dfn, atk)
     return sharkfin
+sfin = Sharkfin()
 
 
 #marsh
@@ -66,6 +70,7 @@ def gweapon():
     atk = 0
     gw = items(nameme, hp, dfn, atk)
     return gw
+gw = gweapon()
 
 #key to hell
 def kth():
@@ -75,6 +80,7 @@ def kth():
     atk = 0
     key = items(nameme, hp, dfn, atk)
     return key
+key = kth()
 
 #Generic accesory randomized`
 def genacc():
@@ -84,6 +90,7 @@ def genacc():
     atk = 0
     ga = items(nameme, hp, dfn, atk)
     return ga
+ga = genacc()
 
 #castle
 #From cv
@@ -94,6 +101,7 @@ def food():
     atk = 0
     Bread = items(nameme, hp, dfn, atk)
     return Bread
+bread = food()
 
 #hades crab lol
 def hcrab():
@@ -103,6 +111,7 @@ def hcrab():
     atk = 0
     hc = items(nameme, hp, dfn, atk)
     return hc
+hc = hcrab()
 
 #mountains
 #from pp
@@ -113,6 +122,7 @@ def persbles():
     atk = 0
     pb = items(nameme, hp, dfn, atk)
     return pb
+pb = persbles()
 
 #from zeus
 def Lbolt():
@@ -122,6 +132,7 @@ def Lbolt():
     atk = 0
     lb = items(nameme, hp, dfn, atk)
     return lb
+lb = Lbolt()
 
 #boss
 def lores():
@@ -131,7 +142,7 @@ def lores():
     atk = 0
     lore = items(nameme, hp, dfn, atk)
     return lore
-
+lore = lores()
 
 #hell
 def cerb():
@@ -141,6 +152,7 @@ def cerb():
     atk = 0
     dog = items(nameme, hp, dfn, atk)
     return dog
+dog = cerb()
 
 #from village
 #barbarian
@@ -151,6 +163,7 @@ def club():
     atk = 0
     wc = items(nameme, hp, dfn, atk)
     return wc
+wc = club()
 
 #wizard
 def wand():
@@ -160,6 +173,7 @@ def wand():
     atk = 0
     stick = items(nameme, hp, dfn, atk)
     return stick
+stick = wand()
 
 #knight
 def sword():
@@ -169,6 +183,7 @@ def sword():
     atk = 0
     ts = items(nameme, hp, dfn, atk)
     return ts
+ts = sword()
 
 #rogue
 def dagger():
@@ -178,5 +193,7 @@ def dagger():
     atk = 0
     rd = items(nameme, hp, dfn, atk)
     return rd
+rd = dagger()
 
-mhead()
+print(rd.atk)
+print(rd.name)
