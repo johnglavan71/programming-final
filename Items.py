@@ -31,7 +31,7 @@ def mhead():
 #ocean
 #magic conch
 def m_c():
-    nameme = 'Boat'
+    nameme = 'Magic Conch'
     hp = 0
     dfn = 0
     atk = 0
