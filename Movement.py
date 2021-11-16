@@ -159,7 +159,7 @@ def dd():
     print('The water is so deep that the water turned black. Maybe we should stay away.')
     sleep(2)
     win = Fights.sharkf()
-    if win == "f"
+    if win == "f":
         ss()
     else:
         wtg = input("Where would you like to go? Coral Reef (cr), Sandy Shore (ss), Port : ")
@@ -181,7 +181,7 @@ def ss():
     wtd = input("You find a happy crab roaming the beach. What do you do? Smite or Walk Away (wa) : ")
     if wtd == "smite" or wtd == "Smite":
         Fights.crabf()
-    elif wtd == "wa" or wtd == "WA"
+    elif wtd == "wa" or wtd == "WA":
         wtg = input("Where would you like to go? Deep Dark (dd), Dense Thicket (dt), Cetus's Domain (cd) : ")
         if wtg == 'dd':
             dd()
@@ -216,7 +216,7 @@ def fs():
     print('You start to wonder why its called the Forbidden sea. Its so calm and peaceful.')
     sleep(2)
     win = Fights.genvilf()
-    if win == "f"
+    if win == "f":
         ss()
     else:
         wtg = input("Where would you like to go? Port, Iron mines (im) : ")
@@ -264,7 +264,7 @@ def mc():
     print('Dont look down... DONT look down... DONT LOOK down... DONT LOOK DOWN!!')
     sleep(2)
     win = Fights.darknessf()
-    if win == "f"
+    if win == "f":
         cg()
     else:
     #if player looks down theres nothing there and say i told you not to.
@@ -393,7 +393,7 @@ def im():
     print("The Iron Mines can be a rough place, but the castle needs its iron.")
     sleep(2)
     win = Fights.kobaldf()
-    if win == "f"
+    if win == "f":
         wt()
     else:
         wtg = input("Where would you like to go? Persephone's Pass (pp), Forbidden Seas (fs) : ")
