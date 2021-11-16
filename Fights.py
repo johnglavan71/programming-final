@@ -366,7 +366,8 @@ def genvilf():
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
             if p.hp <= 0:
-                print("You were no match, have fun in the underworld traveler.")                b3.hp = 0
+                print("You were no match, have fun in the underworld traveler.")
+                b3.hp = 0
                 f = 'f'
                 return f
             elif b3.hp <= 0:
