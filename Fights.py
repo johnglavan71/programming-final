@@ -43,9 +43,9 @@ def fight2():
         while m2.hp > 0:
             print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
             m2.hp -= patk
-            print(f'Monster has {m2.hp} hp left.\n')
+            print(f'Monster has {m2.hp} hp left.')
             sleep(2)
-            print(f'The monster attacks.\n It deals {matk} damage.\n')
+            print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
             if p.hp <= 0:
