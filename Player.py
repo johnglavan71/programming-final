@@ -28,7 +28,7 @@ def classc():
     if classchoice == 'Mage':
         hp = 50
         dfn = 10
-        atk = 100
+        atk = 200
         cur = 100
         p = player(nameme, classchoice, hp, dfn, atk, cur)
     elif classchoice == 'Barbarian':
