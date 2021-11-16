@@ -16,10 +16,10 @@
 
 # why did we create so many characters?!?!?!
 # we can always chop it down a bit
-# no weve committed to it now lol
+# no we've committed to it now lol
 # full send from here
 # yeah
-# i finnished the descriptions what should i start on next? the actuall character?
+# i finished the descriptions what should i start on next? the actual character?
 # either start with the actual characters in main code or try to start how we set up fights
 # i should learn the class thing then try and crate the actual character before we create the other stuff
 # lets do it like that then. When we meet up you can teach me
