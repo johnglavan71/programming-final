@@ -228,8 +228,10 @@ def thief():  # put in slums when swiping "random number 5-10" gold or coins fro
 
 def boss1():  # main story boss 'the great weasel'
     print("You see a large shadow filling the wall ahead of you, you shake with fear.")
-    print("Emerges, The Great Weasel from his den.")
     sleep(1)
+    print("Emerges, The Great Weasel from his den and you see a regular sized Weasel.")
+    sleep(1)
+    print("Suddenly you are less worried.")
     print('"Welcome traveler, I see you have almost taken over this whole land. I am The Great Weasel,')
     print(' my lords great protector. I will not let you take his land!"')
     sleep(1)
@@ -257,7 +259,7 @@ def hades():  # EE boss John write your characters dialog you know it best
     sleep(1)
     # initate battle of cerb
     # if "cerb" wins
-    print("Master have I dont well? I didnt know this traveler was so WEAK!")
+    print("Master have I done well? I didnt know this traveler was so WEAK!")
     # if "cerb" loses
     print("Rest now Cerberus for it is time for me to exact your revenge")
     #initaite battle of hades

@@ -23,7 +23,7 @@ m1 = villagemonster()
 
 
 def forsetmonster():
-    name = ''
+    name = 'Lykaion'
     type = 'Wolf'
     hp = 150
     dfn = 5
@@ -47,7 +47,7 @@ m3 = ssmonster()
 
 
 def ddmonster():
-    name = '?'
+    name = 'Akheilos'
     type = 'Shark'
     hp = 200
     dfn = 15
@@ -59,7 +59,7 @@ m4 = ddmonster()
 
 
 def ironmonster():
-    name = '?'
+    name = 'Talos'
     type = 'Kobald'
     hp = 200
     dfn = 20
@@ -71,8 +71,8 @@ m5 = ironmonster()
 
 
 def mmmonster():
-    name = '?'
-    type = '?'
+    name = 'Lernaean'
+    type = 'Hydra'
     hp = 75
     dfn = 15
     atk = 10
@@ -83,8 +83,8 @@ m6 = mmmonster()
 
 
 def gbmonster():
-    name = '?'
-    type = '?'
+    name = 'Lizard man of Scape Ore Swamp'
+    type = 'Lizard Man'
     hp = 100
     dfn = 25
     atk = 75
@@ -95,8 +95,8 @@ m7 = gbmonster()
 
 
 def mazeboss():
-    name= '?'
-    type= '?'
+    name= 'Medusa'
+    type= 'Gorgon'
     hp= '?'
     dfn= '?'
     atk= '?'
@@ -107,8 +107,8 @@ b1 = mazeboss()
 
 
 def cetusboss():
-    name= '?'
-    type= '?'
+    name= 'Cetus'
+    type= 'Big Ass God Damn Whale'
     hp= '?'
     dfn= '?'
     atk= '?'
@@ -119,8 +119,8 @@ b2 = cetusboss()
 
 
 def genvillan():
-    name= '?'
-    type= '?'
+    name= 'Unknown'
+    type= 'Unknown'
     hp = '?'
     dfn = '?'
     atk = '?'
@@ -131,8 +131,8 @@ b3 = genvillan()
 
 
 def persephoneboss():
-    name= '?'
-    type= '?'
+    name= 'Persephone'
+    type= 'Goddess'
     hp= '?'
     dfn= '?'
     atk= '?'
@@ -143,8 +143,8 @@ b4 = persephoneboss()
 
 
 def hades():
-    name= '?'
-    type= '?'
+    name= 'Hades'
+    type= 'God of the Underworld'
     hp= '?'
     dfn= '?'
     atk= '?'
@@ -155,8 +155,8 @@ b5 = hades()
 
 
 def thegreatweasel():
-    name= '?'
-    type= '?'
+    name= 'The Great Weasel'
+    type= 'Regular Sized Weasel'
     hp= '?'
     dfn= '?'
     atk= '?'
