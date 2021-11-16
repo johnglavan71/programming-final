@@ -35,7 +35,9 @@ def forest():
 
 
 def drg():
-    print('You wandered into a grove of trees. The canopies are blocking the light. Keep your eyes on the ground the roots might be hard to see.')
+    print('You wandered into a grove of trees. The canopies are blocking the light. Keep your eyes on the ground the roots might be hard to see.\n')
+    sleep(2)
+    print('There doesnt seem to be anything of interest here.\n')
     sleep(2)
     wtg = input("Where would you like to go? Village, Maze, Yggdrasil (y) : ")
     if wtg == "Village":
@@ -70,21 +72,25 @@ def maze():
 def dt():
     print('The trees are tightly packed but you can still move through them with relative ease.')
     sleep(2)
-    wtg = input("where would you like to go? sandy shore (ss), misty marsh (mm), maze, yggdrasil (y) : ")
-    if wtg == "ss":
-        ocean()
-        ss()
-    elif wtg == 'mm':
-        marsh()
-        mm()
-    elif wtg == 'maze':
-        maze()
-    elif wtg == 'y':
-        y()
+    win = Fights.fight2()
+    if win == 'f':
+        village()
     else:
-        print('you walked off the path follow the moss back to the path!!')
-        sleep(2)
-        drg()
+        wtg = input("where would you like to go? sandy shore (ss), misty marsh (mm), maze, yggdrasil (y) : ")
+        if wtg == "ss":
+            ocean()
+            ss()
+        elif wtg == 'mm':
+            marsh()
+            mm()
+        elif wtg == 'maze':
+            maze()
+        elif wtg == 'y':
+            y()
+        else:
+            print('you walked off the path follow the moss back to the path!!')
+            sleep(2)
+            drg()
 
 
 def y():
