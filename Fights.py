@@ -4,6 +4,8 @@ from time import sleep
 
 
 def fight1():
+    print('The villagers send you to fight off a giant rat!')
+    print(f'The rat has {m1.hp} hp.')
     matk = m1.atk - p.dfn
     print('Monster does', matk, 'damage.')
     patk = p.atk - m1.dfn
@@ -55,8 +57,3 @@ def fight2():
         print('You run back the way you came!')
         #will probably have this in a seperate loop in the movement area or in the dialogue area.
         return p.cur
-
-
-
-fight1()
-fight2()

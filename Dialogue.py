@@ -31,11 +31,11 @@ from time import sleep
 
 
 def trader():  # place in starting village (assuming its the first NPC the player meets)
-    print("Traveler, welcome to these graceful lands there are many adventures that await")
+    print("\nTraveler, welcome to these graceful lands there are many adventures that await")
     sleep(1)
-    print("I am the traveling trader looking for my way into the Castle Town to sell my goods")
+    print("\nI am the traveling trader looking for my way into the Castle Town to sell my goods")
     sleep(1)
-    ta = input("Would you like to take a look at my inventory? yes or no?")
+    ta = input("\nWould you like to take a look at my inventory? yes or no?")
     if ta == "yes":
         print("Very well then..")
         sleep(1)
@@ -43,7 +43,6 @@ def trader():  # place in starting village (assuming its the first NPC the playe
     elif ta == "no":
         print("We'll meet at a later date goodbye for now new friend.")
         sleep(1)
-        village()
     else:
         print("Seems to me like you did not understand me at all... ")
         sleep(1)
@@ -63,7 +62,6 @@ def blacksmith():  # place in starting village after trader dialogue
     elif ba == "no":
         print("Farewell traveler")
         sleep(1)
-        village()
     else:
         print("For goodness sakes are you deaf, I guess I'll repeat myself..")
         blacksmith()
