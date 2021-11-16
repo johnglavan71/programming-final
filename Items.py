@@ -1,3 +1,6 @@
+from Player import p
+
+
 class items:
     # type is the class you choose
     def __init__(self,name, hp, dfn, atk):
@@ -24,10 +27,11 @@ def medhead():
     dfn = 20
     atk = 0
     mhead = items(nameme, hp, dfn, atk)
-    print(mhead.name)
+    print('You gained', mhead.name)
     print(mhead.name,'gives you',mhead.dfn, 'defence.')
     return mhead
-mhead = medhead()
+
+
 
 #ocean
 #magic conch
