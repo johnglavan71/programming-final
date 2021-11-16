@@ -11,7 +11,7 @@ class monster:
         self.cur = cur
 
 def villagemonster():
-    name = 'Village Rat'
+    name = 'The Fat Rat'
     type = 'Rat'
     hp = 15
     dfn = 10
@@ -140,6 +140,18 @@ def persephoneboss():
     b4 = monster(name, type, hp, dfn, atk, cur)
     return b4
 b4 = persephoneboss()
+
+
+def cerb():
+    name= 'Cerberus'
+    type= '3 Headed Doge'
+    hp= '?'
+    dfn= '?'
+    atk= '?'
+    cur= '?'
+    b5 = monster(name, type, hp, dfn, atk, cur)
+    return b5
+B5 = cerb()
 
 
 def hades():
