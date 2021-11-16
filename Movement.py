@@ -55,18 +55,22 @@ def drg():
 def maze():
     print('You find tall trees that are grown so unnaturally close to one another. Maybe theres something under that arch over there?')
     sleep(2)
-    wtg = input("Where would you like to go? Mysterious Chasm (mc), Dense Thicket (dt), Dark Root Garden (drg) : ")
-    if wtg == "mc":
-        marsh()
-        mc()
-    elif wtg == 'dt':
-        dt()
-    elif wtg == 'drg':
-        drg()
+    win = Fights.mazef()
+    if win == "f":
+        village()
     else:
-        print('You walked off the path follow the moss back to the path!!')
-        sleep(2)
-        maze()
+        wtg = input("Where would you like to go? Mysterious Chasm (mc), Dense Thicket (dt), Dark Root Garden (drg) : ")
+        if wtg == "mc":
+            marsh()
+            mc()
+        elif wtg == 'dt':
+            dt()
+        elif wtg == 'drg':
+            drg()
+        else:
+            print('You walked off the path follow the moss back to the path!!')
+            sleep(2)
+            maze()
 
 
 def dt():
@@ -119,18 +123,22 @@ def ocean():
 def cd():
     print("You have entered Cetus's Domain. He glares at you with intent to kill.")
     sleep(2)
-    wtg = input('Where would you like to go? Yggdrasil, Coral Reef (cr), Sandy Shore (ss) : ')
-    if wtg == 'Yggdrasil':
-        forest()
-        y()
-    elif wtg == 'cr':
-        cr()
-    elif wtg == 'ss':
+    win = Fights.cetusf()
+    if win == "f":
         ss()
     else:
-        print("You fell off the boat get back on quick!!!")
-        sleep(2)
-        cd()
+        wtg = input('Where would you like to go? Yggdrasil, Coral Reef (cr), Sandy Shore (ss) : ')
+        if wtg == 'Yggdrasil':
+            forest()
+            y()
+        elif wtg == 'cr':
+            cr()
+        elif wtg == 'ss':
+            ss()
+        else:
+            print("You fell off the boat get back on quick!!!")
+            sleep(2)
+            cd()
 
 
 def cr():
@@ -150,34 +158,42 @@ def cr():
 def dd():
     print('The water is so deep that the water turned black. Maybe we should stay away.')
     sleep(2)
-    wtg = input("Where would you like to go? Coral Reef (cr), Sandy Shore (ss), Port : ")
-    if wtg == 'cr':
-        cr()
-    elif wtg == "ss":
+    win = Fights.sharkf()
+    if win == "f"
         ss()
-    elif wtg == "Port":
-        port()
     else:
-        print("You fell off the boat get back on quick!!!")
-        sleep(2)
-        dd()
+        wtg = input("Where would you like to go? Coral Reef (cr), Sandy Shore (ss), Port : ")
+        if wtg == 'cr':
+            cr()
+        elif wtg == "ss":
+            ss()
+        elif wtg == "Port":
+            port()
+        else:
+            print("You fell off the boat get back on quick!!!")
+            sleep(2)
+            dd()
 
 
 def ss():
     print("You find a relaxing beach that had many shells lined on the sandy shore.")
     sleep(2)
-    wtg = input("Where would you like to go? Deep Dark (dd), Dense Thicket (dt), Cetus's Domain (cd) : ")
-    if wtg == 'dd':
-        dd()
-    elif wtg == 'dt':
-        forest()
-        dt()
-    elif wtg == 'cd':
-        cd()
-    else:
-        print("You fell off the boat get back on quick!!!")
-        sleep(2)
-        ss()
+    wtd = input("You find a happy crab roaming the beach. What do you do? Smite or Walk Away (wa) : ")
+    if wtd == "smite" or wtd == "Smite":
+        Fights.crabf()
+    elif wtd == "wa" or wtd == "WA"
+        wtg = input("Where would you like to go? Deep Dark (dd), Dense Thicket (dt), Cetus's Domain (cd) : ")
+        if wtg == 'dd':
+            dd()
+        elif wtg == 'dt':
+            forest()
+            dt()
+        elif wtg == 'cd':
+            cd()
+        else:
+            print("You fell off the boat get back on quick!!!")
+            sleep(2)
+            ss()
 
 
 def port():
@@ -199,15 +215,19 @@ def port():
 def fs():
     print('You start to wonder why its called the Forbidden sea. Its so calm and peaceful.')
     sleep(2)
-    wtg = input("Where would you like to go? Port, Iron mines (im) : ")
-    if wtg == 'Port':
-        port()
-    elif wtg == "im":
-        im()
+    win = Fights.genvilf()
+    if win == "f"
+        ss()
     else:
-        print("You fell off the boat get back on quick!!!")
-        sleep(2)
-        fs()
+        wtg = input("Where would you like to go? Port, Iron mines (im) : ")
+        if wtg == 'Port':
+            port()
+        elif wtg == "im":
+            im()
+        else:
+            print("You fell off the boat get back on quick!!!")
+            sleep(2)
+            fs()
 
 
 #Marsh  John
@@ -219,18 +239,22 @@ def marsh():
 def mm():
     print('You can barley see through the fog. Why does it feel like its going to rain?')
     sleep(2)
-    wtg = input("Where would you like to go? Dense Thicket (dt), Mysterious Chasm (mc), Small Forest (sf) : ")
-    if wtg == "dt":
-        forest()
-        dt()
-    elif wtg == 'mc':
-        mc()
-    elif wtg == 'sf':
-        sf()
+    win = Fights.hydraf()
+    if win == "f":
+        cg()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
-        sleep(2)
-        mm()
+        wtg = input("Where would you like to go? Dense Thicket (dt), Mysterious Chasm (mc), Small Forest (sf) : ")
+        if wtg == "dt":
+            forest()
+            dt()
+        elif wtg == 'mc':
+            mc()
+        elif wtg == 'sf':
+            sf()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            mm()
 
         #look at other comment below    i like it feels like the best way to describe whos done what    
         #narrator laughing at charater for getting scared and looking down   
@@ -239,19 +263,23 @@ def mm():
 def mc():
     print('Dont look down... DONT look down... DONT LOOK down... DONT LOOK DOWN!!')
     sleep(2)
-    #if player looks down theres nothing there and say i told you not to.
-    wtg = input("Where would you like to go? Maze, Misty Marsh (mm), Small Forest(sf) : ")
-    if wtg == "Maze":
-        forest()
-        maze()
-    elif wtg == 'mm':
-        mm()
-    elif wtg == 'sf':
-        sf()
+    win = Fights.darknessf()
+    if win == "f"
+        cg()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
-        sleep(2)
-        mc()
+    #if player looks down theres nothing there and say i told you not to.
+        wtg = input("Where would you like to go? Maze, Misty Marsh (mm), Small Forest(sf) : ")
+        if wtg == "Maze":
+            forest()
+            maze()
+        elif wtg == 'mm':
+            mm()
+        elif wtg == 'sf':
+            sf()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            mc()
 
 
 def sf():
@@ -276,18 +304,22 @@ def sf():
 def gb():
     print('The ground feel almost like a sponge. Even without many trees this place still gets little sunlight.')
     sleep(2)
-    wtg = input("Where would you like to go? Whatch Tower (wt), Cypress Graveyard (cg), Small Forest (sf) : ")
-    if wtg == "wt":
-        mountains()
-        wt()
-    elif wtg == 'cg':
+    win = Fights.lizardf()
+    if win == "f":
         cg()
-    elif wtg == 'sf':
-        sf()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
-        sleep(2)
-        gb()
+        wtg = input("Where would you like to go? Whatch Tower (wt), Cypress Graveyard (cg), Small Forest (sf) : ")
+        if wtg == "wt":
+            mountains()
+            wt()
+        elif wtg == 'cg':
+            cg()
+        elif wtg == 'sf':
+            sf()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            gb()
 
 
 def cg():
@@ -342,30 +374,38 @@ def zp():
 def pp():
     print("Persephone's Pass, huh, better watch your back, it will always feel like someones watching you.")
     sleep(2)
-    wtg = input("Where would you like to go? Zeus' Peak (zp), Iron Mills (im) : ")
-    if wtg == 'zp':
-        zp()
-    elif wtg == "im":
-        im()
+    win = Fights.persephonef()
+    if win == "f":
+        wt()
     else:
-        print("Watch your step, Hades lurks below...")
-        sleep(2)
-        dd()
+        wtg = input("Where would you like to go? Zeus' Peak (zp), Iron Mills (im) : ")
+        if wtg == 'zp':
+            zp()
+        elif wtg == "im":
+            im()
+        else:
+            print("Watch your step, Hades lurks below...")
+            sleep(2)
+            dd()
 
 
 def im():
     print("The Iron Mines can be a rough place, but the castle needs its iron.")
     sleep(2)
-    wtg = input("Where would you like to go? Persephone's Pass (pp), Forbidden Seas (fs) : ")
-    if wtg == 'pp':
-        pp()
-    elif wtg == 'fs':
-        ocean()
-        fs()
+    win = Fights.kobaldf()
+    if win == "f"
+        wt()
     else:
-        print("Watch your step, Hades lurks below...")
-        sleep(2)
-        ss()
+        wtg = input("Where would you like to go? Persephone's Pass (pp), Forbidden Seas (fs) : ")
+        if wtg == 'pp':
+            pp()
+        elif wtg == 'fs':
+            ocean()
+            fs()
+        else:
+            print("Watch your step, Hades lurks below...")
+            sleep(2)
+            ss()
 
 
 #Castle Town    Chris and John
