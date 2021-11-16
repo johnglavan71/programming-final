@@ -88,7 +88,7 @@ def maze_boss():  # we need to find name for boss. Make it a gorgon... totally n
     print("arrrrggg... your much better then the others traveler... be aware of whats to come")
 
 
-def Cetus_boss():  # boss spot in cthullu
+def cetus_boss():  # boss spot in cthullu
     print("You're the traveler I've heard so much about.")
     sleep(1)
     print("These waters work in my favor, good luck in this battle..")
@@ -117,6 +117,24 @@ def generic_villian_name_here():  # boss spot in forbidden seas, evil pirate
 
 
 def castle_trader():  # place in castle village
+    print("'Traveler come check out my goods.'")
+    sleep(1)
+    print("'WAIT!! I know you! Looks like we both made passage to the castle!")
+    sleep(1)
+    cta = input("'Hope your adventures have been as well as mine. Want to take a look at my updated inventory?'\n"
+          "yes or no?")
+    if cta == "yes" or cta == "Yes" or cta == "YES":
+        print("Very well then..")
+        sleep(1)
+        castle_trader_inventory()
+    elif cta == "no" or cta == "No" or cta == "NO":
+        print("Come back anytime old friend. Ill be here")
+        sleep(1)
+        cv()
+    else:
+        print("Seems to me like you still have that hearing problem. ")
+        sleep(1)
+        castle_trader()
 
 
 
@@ -132,7 +150,7 @@ def chasm_boss():#"Darkness" name of boss, place in mysterious chasm., spits out
     print("No, no, no, no, no... This can't be happening!!! For your triumph over me you get (generic item)")
 
 
-def persephone():  # place in persephone's pass john want to give this a shot at the dialogue
+def persephone():  # place in persephone's pass, john want to give this a shot at the dialogue
 
 
 def pirates():  # place in port
@@ -145,12 +163,60 @@ def pirates():  # place in port
 
 
 def charon():  # place in cypruss graveyard
+    print("'Hello there young man, I have heard of your travels and it seems to me you're looking for something.\n"
+          "I am Charon, you can think of me as a ferryman. I can give souls a ride straight to Hades.' ")
+    sleep(2.5)
+    cha = input("I have here a key, a key that can bring you to a special place. Would you like me to take you?\n"
+                "yes or no? : ")
+    if cha == "yes" or cha == "Yes" or cha == "YES":
+        print("'Very well then, follow me.......\n")
+        sleep(2)
+        print("\n"
+              "\n"
+              " to the last place you will ever see'")
+        sleep(4)
+        # underworld
+    elif cha == "no" or cha == "No" or cha == "NO":
+        sleep(1)
+        print("'Very well, I am sure I'll be watching, I mean see you later..'")
+    else:
+        print("'BOY, DID YOU NOT HEAR ME!!!!!!'")
 
 
 def cerberus():  # either use with "help" or as a guide for entering castle town differently to get to the castle
+    cera = input("This dog looks lost... do you want to help him? yes or no? ")
+    if cera == "yes" or cera == "Yes" or cera == "YES":
+        print("'Thank you so much sir'")
+        sleep(1)
+        print("Woah it talks")
+        sleep(1)
+        print("'You're the first person to offer me help thank you, my master will be pleased to meet you.")
+        sleep(1)
+        cg()
+    elif cera == "no" or cera == "No" or cera == "NO":
+        print("'Please sir, please I need help'")
+        sleep(1)
+        print("GET OUT OF HERE DOG!")
+        sleep(1)
+        cg()
+    else:
+        print("Am I dreaming... I should rethink this. ")
+        cerberus()
 
 
 def thief():  # put in slums when swiping "random number 5-10" gold or coins from player
+    print("Walking through the slums a man who you passed earlier pickpocketed you\n"
+          "not knowing at all you glance around look for suspicious people.")
+    thiefa = input("Is your class a rogue? yes or no? : ")
+    if thiefa == "yes" or thiefa == "Yes" or thiefa == "YES":
+        print("something about you chasing the man back and getting your money back")
+        #this is where we add onto the whole thief situation
+    elif thiefa == "no" or cera == "No" or cera == "NO":
+        print("Your class is not registered to take action.")
+        slums()
+    else:
+        print("Improper input try again...")
+        sleep(2)
 
 
 def boss1():  # main story boss 'the great weasel'

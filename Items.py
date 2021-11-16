@@ -8,16 +8,17 @@ class items:
 
 #forest
 #from yggdrasil
-def boat():
+def boat1():
     nameme = 'Boat'
     hp = 0
     dfn = 0
     atk = 0
     boat = items(nameme, hp, dfn, atk)
     return boat
+boat = boat1()
 
 #from maze
-def mhead():
+def medhead():
     nameme = 'Medusas Head'
     hp = 0
     dfn = 20
@@ -26,7 +27,7 @@ def mhead():
     print(mhead.name)
     print(mhead.name,'gives you',mhead.dfn, 'defence.')
     return mhead
-
+mhead = medhead()
 
 #ocean
 #magic conch
@@ -35,113 +36,164 @@ def m_c():
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    mc = items(nameme, hp, dfn, atk)
+    return mc
+mc = m_c()
 
 #pirate hat that comes from the
 def phat():
-    nameme = 'Boat'
+    nameme = 'Pirates Hat'
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    pihat = items(nameme, hp, dfn, atk)
+    return pihat
+pihat = phat()
 
 #Shark Fin
 def Sharkfin():
-    nameme = 'Boat'
+    nameme = 'Sharks Fin'
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    sharkfin = items(nameme, hp, dfn, atk)
+    return sharkfin
+sfin = Sharkfin()
 
 
 #marsh
 #Generic item from the mych randomized
 def gweapon():
-    nameme = 'Boat'
+    nameme = '(Generic Weapon)'
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    gw = items(nameme, hp, dfn, atk)
+    return gw
+gw = gweapon()
 
 #key to hell
 def kth():
-    nameme = 'Boat'
+    nameme = 'The Key to Hell'
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    key = items(nameme, hp, dfn, atk)
+    return key
+key = kth()
 
 #Generic accesory randomized`
-def ga():
-    nameme = 'Boat'
+def genacc():
+    nameme = '(Generic Accesory)'
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    ga = items(nameme, hp, dfn, atk)
+    return ga
+ga = genacc()
 
 #castle
 #From cv
 def food():
-    nameme = 'Boat'
+    nameme = 'Bread'
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    Bread = items(nameme, hp, dfn, atk)
+    return Bread
+bread = food()
 
 #hades crab lol
 def hcrab():
-    nameme = 'Boat'
+    nameme = "Hade's Crab"
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    hc = items(nameme, hp, dfn, atk)
+    return hc
+hc = hcrab()
 
 #mountains
 #from pp
 def persbles():
-    nameme = 'Boat'
+    nameme = "Persephone's Blessing"
     hp = 0
     dfn = 0
     atk = 0
-    boat = items(nameme, hp, dfn, atk)
-    return boat
+    pb = items(nameme, hp, dfn, atk)
+    return pb
+pb = persbles()
 
 #from zeus
 def Lbolt():
-    ...
+    nameme = 'Lightning Bolt'
+    hp = 0
+    dfn = 0
+    atk = 0
+    lb = items(nameme, hp, dfn, atk)
+    return lb
+lb = Lbolt()
 
 #boss
-def lore():
-    ...
-
+def lores():
+    nameme = 'Lore'
+    hp = 0
+    dfn = 0
+    atk = 0
+    lore = items(nameme, hp, dfn, atk)
+    return lore
+lore = lores()
 
 #hell
 def cerb():
-    ...
+    nameme = 'Cerberus'
+    hp = 0
+    dfn = 0
+    atk = 0
+    dog = items(nameme, hp, dfn, atk)
+    return dog
+dog = cerb()
 
 #from village
 #barbarian
 def club():
-    ...
+    nameme = 'Wooden Club'
+    hp = 0
+    dfn = 0
+    atk = 0
+    wc = items(nameme, hp, dfn, atk)
+    return wc
+wc = club()
 
 #wizard
 def wand():
-    ...
+    nameme = 'Magic Stick'
+    hp = 0
+    dfn = 0
+    atk = 0
+    stick = items(nameme, hp, dfn, atk)
+    return stick
+stick = wand()
 
 #knight
 def sword():
-    ...
+    nameme = 'Training Sword'
+    hp = 0
+    dfn = 0
+    atk = 0
+    ts = items(nameme, hp, dfn, atk)
+    return ts
+ts = sword()
 
 #rogue
 def dagger():
-    ...
+    nameme = 'Rusty Dagger'
+    hp = 0
+    dfn = 0
+    atk = 0
+    rd = items(nameme, hp, dfn, atk)
+    return rd
+rd = dagger()
 
-mhead()
+print(rd.atk)
+print(rd.name)
