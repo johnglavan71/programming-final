@@ -79,12 +79,7 @@ def yggdrasil():  # Make it sound like an old wise man telling stories about pas
 
 def maze_boss():  # we need to find name for boss. Make it a gorgon... totally not what medusa is... LOREEEEEEE! WE STICK TO LORE HERE
     print("You navigate a maze well, good luck defeating me")
-    # initate battle
-    # if 'gorgon' won
-    print("you tried your best your beautiful soul is now mine")
-    # if 'gorgon' loses
-    print("arrrrggg... your much better then the others traveler... be aware of whats to come")
-
+    
 
 def cetus_boss():  # boss spot in cthullu
     print("You're the traveler I've heard so much about.")

@@ -1,4 +1,4 @@
-from Monsters import m1,m2,m3
+from Monsters import m1,m2,bs
 from Player import p
 from time import sleep
 
@@ -32,7 +32,7 @@ def fight1():
         return p.cur
 
 def fight2():
-    print(f'You run into a {m2.type}.')
+    print(f'You run into a {m2.type} named {b2.name}.')
     print(f'It has {m2.hp} hp.')
     matk = m2.atk - p.dfn
     print('It does', matk, 'damage.')
@@ -71,3 +71,36 @@ def fight2():
             fight2()
         #will probably have this in a seperate loop in the movement area or in the dialogue area.
         return p.cur
+
+def mazef():
+    print(f'You run into a {b1.type} named {b1.name}..')
+    print(f'She has {b1.hp} hp.')
+    matk = b1.atk - p.dfn
+    print('She does', matk, 'damage.')
+    patk = p.atk - b1.dfn
+    print('You do', patk,'damage, and have', p.hp,'hp.')
+    fight = input('Do you wish to fight? Y/N \n: ')
+    if fight == 'Y' or fight == 'y':
+        while b1.hp > 0:
+            print(f'\nYou attack the {b1.type}.\n You deal {patk} damage.\n')
+            b1.hp -= patk
+            print(f'{b1.name} has {b1.hp} hp left.')
+            sleep(2)
+            print(f'{b1.name} attacks.\n She deals {matk} damage.')
+            p.hp -= matk
+            print(f'You have {p.hp} hp left.')
+            if p.hp <= 0:
+                print("You tried your best. Your beautiful soul is now mine")
+                b1.hp = 0
+                f = 'f'
+                return f
+            elif b1.hp <= 0:
+                break
+        print("Arrrrggg... your much better then the others traveler... be aware of whats to come")
+        p.cur += b1.cur
+        print(f'You now have {p.cur} gold coins!\n')
+    elif fight == "N":
+        print('The maze has closed behind you. You cant leave now.')
+        #will probably have this in a seperate loop in the movement area or in the dialogue area.
+        return p.cur
+
