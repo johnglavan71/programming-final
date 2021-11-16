@@ -1,19 +1,32 @@
 from time import sleep
-
+import Dialogue
+import Fights
 
 #village    John
 def village():
-    print('Welcome to the the quaint little village of (Insert generic village name here). We hope you enjoy your stay!')
+    print('Welcome to the the quaint little village of (Insert generic village name here). We hope you enjoy your stay!\n')
     sleep(2)
-    wtg = input("Where would you like to go? Dark Root Garden (drg) : ")
-    if wtg == "drg":
-        forest()
-        drg()
-    else:
-        print('One of the villagers doesnt want you to leave yet.')
-        sleep(4)
+    wtd = input('What would you like to do? Talk to trader? (T) Talk to Blacksmith? (B) Go somewhere? (GO) First quest. (FQ)\n: ')
+    if wtd == 'T':
+        Dialogue.trader()
         village()
-
+    elif wtd == 'B':
+        Dialogue.blacksmith()
+        village()
+    elif wtd == 'FQ':
+        Fights.fight1()
+        village()
+    elif wtd == 'GO':
+        wtg = input("Where would you like to go? Dark Root Garden (drg) : ")
+        if wtg == "drg":
+            forest()
+            drg()
+        else:
+            print('One of the villagers doesnt want you to leave yet.')
+            sleep(4)
+            village()
+    else:
+        village()
 
 #forest     John
 def forest():
