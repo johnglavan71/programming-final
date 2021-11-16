@@ -59,7 +59,6 @@ print(f'Your class is {p.playclass}.')
 print(f'You have {p.hp} health points.')
 print(f'You do {p.atk} damage.')
 print(f'You block {p.dfn} damage.')
-print(f'You have {p.cur} gold coins.')
-p.hp += 10
-print(p.hp)
+print(f'You have {p.cur} gold coins.\n')
+
 
