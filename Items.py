@@ -21,7 +21,7 @@ def boat1():
 boat = boat1()
 
 #from maze
-def medhead():
+def medhead():#oshdfiushdafiwuicsahiueyhcryfcbywubcfysudhaiudhiuahfioa
     nameme = 'Medusas Head'
     hp = 0
     dfn = 20
@@ -45,7 +45,7 @@ def m_c():
 mc = m_c()
 
 #pirate hat that comes from the
-def phat():
+def phat():#koishofgiuhsoiufhosihfoishgoishgioesn
     nameme = 'Pirates Hat'
     hp = 0
     dfn = 0
@@ -55,7 +55,7 @@ def phat():
 pihat = phat()
 
 #Shark Fin
-def Sharkfin():
+def Sharkfin():#BJSOIUHFIHOIFDHSAOIUHFOIUSHFSIUHFIOSUHFOSIUHSOHSOFIhoiahofiaoih
     nameme = 'Sharks Fin'
     hp = 0
     dfn = 0
@@ -67,7 +67,7 @@ sfin = Sharkfin()
 
 #marsh
 #Generic item from the mych randomized
-def gweapon():
+def gweapon():#sehdifhcifibhsufgcsuyfsiuyfiushfoiushgoihsoiughsoihgsoihgosih
     nameme = '(Generic Weapon)'
     hp = 0
     dfn = 0
@@ -119,7 +119,7 @@ hc = hcrab()
 
 #mountains
 #from pp
-def persbles():
+def persbles():#siuhfihsvfichsifhsiohfciuwhsfiuchsiufhcsiuhfsiuchsdggsdg
     nameme = "Persephone's Blessing"
     hp = 0
     dfn = 0
