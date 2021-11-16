@@ -79,11 +79,6 @@ def yggdrasil():  # Make it sound like an old wise man telling stories about pas
 
 def maze_boss():  # we need to find name for boss. Make it a gorgon... totally not what medusa is... LOREEEEEEE! WE STICK TO LORE HERE
     print("You navigate a maze well, good luck defeating me")
-    # initate battle
-    # if 'gorgon' won
-    print("you tried your best your beautiful soul is now mine")
-    # if 'gorgon' loses
-    print("arrrrggg... your much better then the others traveler... be aware of whats to come")
 
 
 def cetus_boss():  # boss spot in cthullu
@@ -92,9 +87,9 @@ def cetus_boss():  # boss spot in cthullu
     print("These waters work in my favor, good luck in this battle..")
     #initate battle
     #if cetus wins
-    print("These waters are my home, I know them better muhahaha")
+
     #if cetus loses
-    print("NOOOO! How? Why? UGGHGGHGHGHGH")
+
 
 
 
@@ -109,9 +104,8 @@ def generic_villian_name_here():  # boss spot in forbidden seas, evil pirate
     sleep(1)
     #initate fight
     #if gvnh wins
-    print("You were no match, have fun in the underworld traveler.")
+
     #if gvnh loses
-    print("You bested me, no one has ever... done.... that...")
 
 
 def castle_trader():  # place in castle village
@@ -143,9 +137,7 @@ def chasm_boss():#"Darkness" name of boss, place in mysterious chasm., spits out
     sleep(2)
     #iniate fight
     #if darkness wins
-    print("Another traveler scared of the dark, eternal rest is your fate now..")
     #if darkness loses
-    print("No, no, no, no, no... This can't be happening!!! For your triumph over me you get (generic item)")
 
 
 def persephone():  # place in persephone's pass, john want to give this a shot at the dialogue
@@ -158,7 +150,6 @@ def persephone():  # place in persephone's pass, john want to give this a shot a
     print("Im sorry. I did now wish to do this to you. Rest easy I will bring you back to the village.")
     #make character go to village
     # if Persephone loses
-    print("I do not wish to fight you anymore. It is clear that your are stronger than I am. Here take this and run.")
 
 def pirates():  # place in port
     print("Welcome to the ports adventurer, what brings you around these waters??")
