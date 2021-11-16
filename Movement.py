@@ -55,18 +55,23 @@ def drg():
 def maze():
     print('You find tall trees that are grown so unnaturally close to one another. Maybe theres something under that arch over there?')
     sleep(2)
-    wtg = input("Where would you like to go? Mysterious Chasm (mc), Dense Thicket (dt), Dark Root Garden (drg) : ")
-    if wtg == "mc":
-        marsh()
-        mc()
-    elif wtg == 'dt':
-        dt()
-    elif wtg == 'drg':
-        drg()
+    Dialogue.maze_boss()
+    win = Fights.mazef
+    if win == "f":
+        village()
     else:
-        print('You walked off the path follow the moss back to the path!!')
-        sleep(2)
-        maze()
+        wtg = input("Where would you like to go? Mysterious Chasm (mc), Dense Thicket (dt), Dark Root Garden (drg) : ")
+        if wtg == "mc":
+            marsh()
+            mc()
+        elif wtg == 'dt':
+            dt()
+        elif wtg == 'drg':
+            drg()
+        else:
+            print('You walked off the path follow the moss back to the path!!')
+            sleep(2)
+            maze()
 
 
 def dt():
@@ -96,6 +101,7 @@ def dt():
 def y():
     print('The tree feels like its trying to talk to you. Maybe you should touch it.')
     sleep(2)
+    Dialogue.yggdrasil()
     wtg = input("Where would you like to go? Cetus's Domain (cd), Dense Thicket (dt), Dark Root Garden (drg) : ")
     if wtg == "cd":
         ocean()
@@ -119,6 +125,7 @@ def ocean():
 def cd():
     print("You have entered Cetus's Domain. He glares at you with intent to kill.")
     sleep(2)
+    Dialogue.cetus_boss()
     wtg = input('Where would you like to go? Yggdrasil, Coral Reef (cr), Sandy Shore (ss) : ')
     if wtg == 'Yggdrasil':
         forest()
@@ -218,19 +225,23 @@ def marsh():
 
 def mm():
     print('You can barley see through the fog. Why does it feel like its going to rain?')
-    sleep(2)
-    wtg = input("Where would you like to go? Dense Thicket (dt), Mysterious Chasm (mc), Small Forest (sf) : ")
-    if wtg == "dt":
-        forest()
-        dt()
-    elif wtg == 'mc':
-        mc()
-    elif wtg == 'sf':
-        sf()
+    win = Fights.mmf
+    if win == "f":
+        cg()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
         sleep(2)
-        mm()
+        wtg = input("Where would you like to go? Dense Thicket (dt), Mysterious Chasm (mc), Small Forest (sf) : ")
+        if wtg == "dt":
+            forest()
+            dt()
+        elif wtg == 'mc':
+            mc()
+        elif wtg == 'sf':
+            sf()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            mm()
 
         #look at other comment below    i like it feels like the best way to describe whos done what    
         #narrator laughing at charater for getting scared and looking down   
@@ -239,19 +250,24 @@ def mm():
 def mc():
     print('Dont look down... DONT look down... DONT LOOK down... DONT LOOK DOWN!!')
     sleep(2)
-    #if player looks down theres nothing there and say i told you not to.
-    wtg = input("Where would you like to go? Maze, Misty Marsh (mm), Small Forest(sf) : ")
-    if wtg == "Maze":
-        forest()
-        maze()
-    elif wtg == 'mm':
-        mm()
-    elif wtg == 'sf':
-        sf()
+    Dialogue.chasm_boss()
+    win = Fights.chasmf
+    if win == "f":
+        cg()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
-        sleep(2)
-        mc()
+        #if player looks down theres nothing there and say i told you not to.
+        wtg = input("Where would you like to go? Maze, Misty Marsh (mm), Small Forest(sf) : ")
+        if wtg == "Maze":
+            forest()
+            maze()
+        elif wtg == 'mm':
+            mm()
+        elif wtg == 'sf':
+            sf()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            mc()
 
 
 def sf():
@@ -276,18 +292,22 @@ def sf():
 def gb():
     print('The ground feel almost like a sponge. Even without many trees this place still gets little sunlight.')
     sleep(2)
-    wtg = input("Where would you like to go? Whatch Tower (wt), Cypress Graveyard (cg), Small Forest (sf) : ")
-    if wtg == "wt":
-        mountains()
-        wt()
-    elif wtg == 'cg':
+    win = Fights.gbf
+    if win == "f":
         cg()
-    elif wtg == 'sf':
-        sf()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
-        sleep(2)
-        gb()
+        wtg = input("Where would you like to go? Whatch Tower (wt), Cypress Graveyard (cg), Small Forest (sf) : ")
+        if wtg == "wt":
+            mountains()
+            wt()
+        elif wtg == 'cg':
+            cg()
+        elif wtg == 'sf':
+            sf()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            gb()
 
 
 def cg():
