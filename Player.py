@@ -14,12 +14,7 @@ def retry():
     classc()
 
 def classc():
-    classchoice = input('Please choose your class.\n'
-                        'Mage : Uses magic to slay your foes in mysterious ways.\n'
-                        'Barbarian : All you know is how to fight.\n'
-                        'Knight : You MUST protect the others.\n'
-                        'Rogue : Stealth and steal is what your best at.\n'
-                        ':')
+    classchoice = 0
     while classchoice != 'Mage' or classchoice != 'Barbarian' or classchoice != 'Knight' or classchoice!= 'Rogue':
         classchoice = input('Please choose your class.\n'
                             'Mage : Uses magic to slay your foes in mysterious ways.\n'
