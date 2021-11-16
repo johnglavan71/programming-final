@@ -3,6 +3,8 @@ import Dialogue
 import Fights
 
 #village    John
+
+
 def village():
     print('Welcome to the the quaint little village of (Insert generic village name here). We hope you enjoy your stay!\n')
     sleep(2)
@@ -29,6 +31,8 @@ def village():
         village()
 
 #forest     John
+
+
 def forest():
     print('Warning dangerous monsters!! Stay on path the forest is dark, and you may get lost.')
     sleep(4)
@@ -267,7 +271,7 @@ def mc():
     if win == "f":
         cg()
     else:
-    #if player looks down theres nothing there and say i told you not to.
+        #if player looks down theres nothing there and say i told you not to.
         wtg = input("Where would you like to go? Maze, Misty Marsh (mm), Small Forest(sf) : ")
         if wtg == "Maze":
             forest()
