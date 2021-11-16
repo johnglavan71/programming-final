@@ -151,7 +151,16 @@ def chasm_boss():#"Darkness" name of boss, place in mysterious chasm., spits out
 
 
 def persephone():  # place in persephone's pass, john want to give this a shot at the dialogue
-
+    print("Oh a Traveler? Ive heard rumors that there was a new traveler in these lands.")
+    print("I do not wish to fight but im sure the god of this land would be mad at me if I didn't.")
+    print("Dont worry for this will end quickly.")
+    sleep(2)
+    # iniate fight
+    # if persephone wins
+    print("Im sorry. I did now wish to do this to you. Rest easy I will bring you back to the village.")
+    #make character go to village
+    # if Persephone loses
+    print("I do not wish to fight you anymore. It is clear that your are stronger than I am. Here take this and run.")
 
 def pirates():  # place in port
     print("Welcome to the ports adventurer, what brings you around these waters??")
@@ -236,3 +245,26 @@ def boss1():  # main story boss 'the great weasel'
 
 
 def hades():  # EE boss John write your characters dialog you know it best
+    print("You enter the castles main hall.")
+    sleep(1)
+    print('The room is full of fire, almost like you just returned to hell.')
+    sleep(1)
+    print('Cerberus howls and runs to greet the man in the chair.')
+    print("The man is Hades God of the Underworld")
+    sleep(1)
+    print('"Welcome, It must have ben a long journey here young traveler.')
+    print('However, You have conquered my lands and destroyed what i have built.')
+    sleep(1)
+    print("Get ready! You first battle will not be against me but Cerberus will take you on.")
+    sleep(1)
+    # initate battle of cerb
+    # if "cerb" wins
+    print("Master have I dont well? I didnt know this traveler was so WEAK!")
+    # if "cerb" loses
+    print("Rest now Cerberus for it is time for me to exact your revenge")
+    #initaite battle of hades
+    # if "hades" wins
+    print("You cannot truly believe you can beat a GOD do you?!")
+    # if "cerb" loses
+    print("I see you have come farther than anyone has ever expected of you. Here take this and i will return to the underworld.")
+    #give crab
