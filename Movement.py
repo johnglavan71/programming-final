@@ -353,15 +353,57 @@ def gb():
 def cg():
     print('The stench is almost unbearable yet it looks like someone is standing overthere, staring?')
     sleep(2)
-    wtg = input("Where would you like to go? Small Forest (sf), Gloomy Bog (gb) : ")
-    if wtg == "sf":
-        sf()
-    elif wtg == 'gb':
-        gb()
+    if minv.wcrab == 'yes' or minv.wcrab2 == 'yes':
+        talk = input('Do you wish to talk to Charon? Y/N : ')
+        if talk == 'y' or talk == 'Y':
+            print('I can grant you the key to hell for a price.\n The cost is 1000 gold pieces!')
+            buy = ('Do you wish to buy the key? Y/N')
+            if buy == 'y' or buy == 'Y':
+                if p.cur < 1000:
+                    print('You do not have enough money to satify me.')
+                elif p.cur >= 1000:
+                    p.cur -= 1000
+                    minv.kth = "yes"
+                    print('When in the Cypress Graveyard type in hell to go to the underworld.')
+            elif buy == 'N' or buy == 'n':
+                print('Very well then continue your adventures traveler.')
+            else:
+                print('Lets start this conversation over.')
+                cg()
+        elif talk == 'n' or talk == 'N':
+            print('You decide to keep on walking.')
+        else:
+            print('Try typing correctly this is a text based game you should be used to it buy now.')
+            cg()
     else:
-        print('You got turned around in the cattails and found yourself right where you began.')
-        sleep(2)
-        cg()
+        wtg = input("Where would you like to go? Small Forest (sf), Gloomy Bog (gb) : ")
+        if wtg == "sf":
+            sf()
+        elif wtg == 'gb':
+            gb()
+        elif wtg == 'hell' or wtg == 'Hell':
+            if minv.cerb = 'yes'
+                print('You have no reason to go back.')
+                cg()
+            else:
+                print('You hop in a boat and are ferried across the river styx.\n'
+                      'After reaching the otherside you find a dog with 3 heads.\n'
+                      'It says its looking for its owner. You decide why not it cant hurt.\n'
+                      'You ferry it back across the river and is says it can smell its owner.\n'
+                      'It stares intently at the castle. Maybe you should go there.')
+                minv.cerb = 'yes'
+                p.hp += dog.hp
+                p.dfn += dog.dfn
+                p.atk += dog.atk
+                print('The dog says its name is Cerberus and will help you travel to the castle.')
+                print(f'You now have {p.hp} health.')
+                print(f'You now have {p.dfn} defence.')
+                print(f'You now do {p.atk} damage.')
+                cg()
+        else:
+            print('You got turned around in the cattails and found yourself right where you began.')
+            sleep(2)
+            cg()
 
 
 #Mountains  Chris

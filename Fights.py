@@ -567,6 +567,7 @@ def weaself():
     sleep(2)
     p.cur += ran1100
     if minv.clegs == 'yes':
+        minv.wcrab = 'yes'
         print('You received', {wc.name})
         print('You smite me ealier so now its my turn to ruin you stats ..l..')
         p.hp += wc.hp
@@ -576,6 +577,7 @@ def weaself():
         print(f'You now have {p.dfn} defence.')
         print(f'You now deal {p.atk} damage.')
     else:
+        minv.wcrab2 = 'yes'
         print('You received', {wc2.name})
         print('I was the crab in Sandy Shores. Thank you for sparing me!')
         p.hp += wc2.hp
