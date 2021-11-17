@@ -1,4 +1,4 @@
-from Monsters import m1,m2,bs
+from Monsters import m1,m2,m3,m4,m5,m6,m7,b1,b2,b3,b4,b5,B5,b6,b7
 from Player import p
 from time import sleep
 
@@ -105,7 +105,7 @@ def mazef():
         mazef()
 
 
-def fight3():
+def crabf():
     print(f'You run into a {m3.type} named {b2.name}.')
     print(f'It has {m3.hp} hp.')
     matk = m3.atk - p.dfn
@@ -147,7 +147,7 @@ def fight3():
         return p.cur
 
 
-def fight4():
+def sharkf():
     print(f'You run into a {m4.type} named {b2.name}.')
     print(f'It has {m4.hp} hp.')
     matk = m4.atk - p.dfn
@@ -189,7 +189,7 @@ def fight4():
         return p.cur
 
 
-def fight5():
+def kobaldf():
     print(f'You run into a {m5.type} named {b2.name}.')
     print(f'It has {m5.hp} hp.')
     matk = m5.atk - p.dfn
@@ -231,7 +231,7 @@ def fight5():
         return p.cur
 
 
-def fight6():
+def hydraf():
     print(f'You run into a {m6.type} named {b2.name}.')
     print(f'It has {m6.hp} hp.')
     matk = m6.atk - p.dfn
@@ -273,7 +273,8 @@ def fight6():
         return p.cur
 
 
-def fight7():
+
+def lizardf():
     print(f'You run into a {m7.type} named {m7.name}.')
     print(f'It has {m7.hp} hp.')
     matk = m7.atk - p.dfn
@@ -366,7 +367,8 @@ def genvilf():
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
             if p.hp <= 0:
-                print("You were no match, have fun in the underworld traveler.")                b3.hp = 0
+                print("You were no match, have fun in the underworld traveler.")
+                b3.hp = 0
                 f = 'f'
                 return f
             elif b3.hp <= 0:
