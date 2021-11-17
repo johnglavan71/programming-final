@@ -25,7 +25,7 @@ def ran120():
 ran120 = ran120()
 
 def ran2575():
-    ran2575 = random.ranint(25, 75)
+    ran2575 = random.randint(25, 75)
     return ran2575
 ran2575 = ran2575()
 

@@ -463,4 +463,4 @@ def blacksmith_inventory():
         print('If you cant follow the directions im keeping the money!')
         blacksmith()
 
-blacksmith()
+

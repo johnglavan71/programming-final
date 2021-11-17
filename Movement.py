@@ -3,6 +3,7 @@ import Dialogue
 import Fights
 from Items import *
 from Player import p
+import Maze
 
 
 #village    John
@@ -62,15 +63,27 @@ def drg():
 def maze():
     print('You find tall trees that are grown so unnaturally close to one another. Maybe theres something under that arch over there?')
     sleep(2)
-    win = Fights.mazef()
-    if win == "f":
-        village()
+    q = Maze.mazepath()
+    if q == 1:
+        win = Fights.mazef()
+        if win == "f":
+            village()
+        else:
+            wtg = input("Where would you like to go? Mysterious Chasm (mc), Dense Thicket (dt), Dark Root Garden (drg) : ")
+            if wtg == "mc":
+                marsh()
+                mc()
+            elif wtg == 'dt':
+                dt()
+            elif wtg == 'drg':
+                drg()
+            else:
+                print('You walked off the path follow the moss back to the path!!')
+                sleep(2)
+                maze()
     else:
-        wtg = input("Where would you like to go? Mysterious Chasm (mc), Dense Thicket (dt), Dark Root Garden (drg) : ")
-        if wtg == "mc":
-            marsh()
-            mc()
-        elif wtg == 'dt':
+        wtg = input("Where would you like to go? Dense Thicket (dt), Dark Root Garden (drg) : ")
+        if wtg == 'dt':
             dt()
         elif wtg == 'drg':
             drg()
@@ -78,6 +91,7 @@ def maze():
             print('You walked off the path follow the moss back to the path!!')
             sleep(2)
             maze()
+
 
 
 def dt():
@@ -538,4 +552,4 @@ def weasel():
     else:
         wt()
 
-village()
+maze()
