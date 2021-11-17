@@ -273,8 +273,9 @@ def hydraf():
         return p.cur
 
 
+
 def lizardf():
-    print(f'You run into a {m7.type} named {b2.name}.')
+    print(f'You run into a {m7.type} named {m7.name}.')
     print(f'It has {m7.hp} hp.')
     matk = m7.atk - p.dfn
     print('It does', matk, 'damage.')

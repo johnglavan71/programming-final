@@ -382,6 +382,9 @@ def pp():
     if win == "f":
         wt()
     else:
+        print("Watch your step, Hades lurks below...")
+        sleep(2)
+        pp()
         wtg = input("Where would you like to go? Zeus' Peak (zp), Iron Mills (im) : ")
         if wtg == 'zp':
             zp()
@@ -400,6 +403,9 @@ def im():
     if win == "f":
         wt()
     else:
+        print("Watch your step, Hades lurks below...")
+        sleep(2)
+        im()
         wtg = input("Where would you like to go? Persephone's Pass (pp), Forbidden Seas (fs) : ")
         if wtg == 'pp':
             pp()
@@ -430,7 +436,7 @@ def slums():
     else:
         print("You feel like your being watched... but nobodys there.")
         sleep(2)
-        wt()
+        slums()
 
 
 def cv():
@@ -458,7 +464,7 @@ def c():
     else:
         print("The castle hallway seems to loop in on itself.")
         sleep(2)
-        dd()
+        c()
 
 
 def nobles():
