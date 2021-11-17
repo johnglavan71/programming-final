@@ -199,7 +199,8 @@ def sharkf():
             print(f'You have {php} hp left.\n')
             sleep(3)
             if php <= 0:
-                print('You have lost! When one of the villagers goes out for a walk they find you asleep in the woods.')
+                print('You fall out of your boat and the waves wash you ashore.')
+                minv.boat1 = 'no'
                 m4.hp = 0
                 f = 'f'
                 return f
@@ -386,6 +387,8 @@ def cetusf():
             if php <= 0:
                 print("These waters are my home, I know them better muhahaha")
                 b2.hp = 0
+                print('Your boat was destroyed in the fight.')
+                minv.boat1 = 'no'
                 f = 'f'
                 return f
 
@@ -429,6 +432,8 @@ def genvilf():
             sleep(3)
             if php <= 0:
                 print("You were no match, have fun in the underworld traveler.")
+                minv.boat1 = "no"
+                print("Your boat was destroyed in the fight.")
                 b3.hp = 0
                 f = 'f'
                 return f
@@ -530,5 +535,58 @@ def darknessf():
     elif fight == "N":
         print('You cant find your way out its too dark.')
         darknessf()
+
+def weaself():
+    php = p.hp
+    print(f'You have {p.hp} health.')
+    print(f'You run into a {b6.type} named {b6.name}..')
+    print(f'The Great Weasel has {b6.hp} hp.')
+    matk = b6.atk - p.dfn
+    print('The Great Weasel does', matk, 'damage.')
+    patk = p.atk - b6.dfn
+    print('You do', patk, 'damage, and have', php, 'hp.')
+    print("Are you ready!?")
+    sleep(5)
+    print('Things are going to be different. Im sure your used to attacking first huh?')
+    while b6.hp > 0:
+        print(f'{b6.name} attacks.\n It deals {matk} damage.')
+        php -= matk
+        print(f'You have {php} hp left.\n')
+        sleep(3)
+        if php <= 0:
+            print("My lord will never let me die like this, you will pay!!! He will make you pay!!!!")
+            f = 'f'
+            return f
+        pr0int(f'You attack the {b6.type}.\n You deal {patk} damage.')
+        b6.hp -= patk
+        print(f'{b6.name} has {b6.hp} hp left.\n')
+        sleep(3)
+        if b6.hp <= 0:
+            break
+    print("'You will never take my lords land! He will live on forever!'")
+    sleep(2)
+    p.cur += ran1100
+    if minv.clegs == 'yes':
+        print('You received', {wc.name})
+        print('You smite me ealier so now its my turn to ruin you stats ..l..')
+        p.hp += wc.hp
+        p.atk += wc.atk
+        p.dfn += wc.dfn
+        print(f'You now have {p.hp} health.')
+        print(f'You now have {p.dfn} defence.')
+        print(f'You now deal {p.atk} damage.')
+    else:
+        print('You received', {wc2.name})
+        print('I was the crab in Sandy Shores. Thank you for sparing me!')
+        p.hp += wc2.hp
+        p.atk += wc2.atk
+        p.dfn += wc2.dfn
+        print(f'You now have {p.hp} health.')
+        print(f'You now have {p.dfn} defence.')
+        print(f'You now deal {p.atk} damage.')
+    sleep(1)
+    print(f'You now have {p.cur} gold coins!\n')
+    return p.cur
+
 
 
