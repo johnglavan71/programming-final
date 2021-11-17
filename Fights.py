@@ -2,7 +2,7 @@ from Monsters import m1,m2,m3,m4,m5,m6,m7,b1,b2,b3,b4,b5,B5,b6,b7
 from Player import p
 from time import sleep
 from Items import *
-
+from Randomizer import *
 
 def fight1():
     php = p.hp
@@ -32,7 +32,7 @@ def fight1():
                 return None
 
         print('You have won this battle!')
-        p.cur += m1.cur
+        p.cur += ran15
         print(f'You now have {p.cur} gold coins!')
         print(f'You have been returned to {p.hp} health. This will happen after every battle.')
         return p.cur
@@ -66,7 +66,7 @@ def fight2():
                 return f
 
         print('You have won this battle!')
-        p.cur += m2.cur
+        p.cur += ran110
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
         if p.playclass == 'Rogue' or p.playclass == 'Mage':
@@ -111,7 +111,7 @@ def mazef():
                 return f
 
         print("Arrrrggg... your much better then the others traveler... be aware of whats to come")
-        p.cur += b1.cur
+        p.cur += ran2575
         minv.medhead = "yes"
         print('You received', {mhead.name})
         p.hp += mhead.hp
@@ -153,8 +153,13 @@ def crabf():
                 return f
 
         print('You have won this battle!')
-        #crablegs here still not a callable item or variable yet
-        p.cur += m3.cur
+        p.cur += 0
+        minv.clegs = "yes"
+        print('You received', {clegs.name})
+        p.hp += clegs.hp
+        p.atk += clegs.atk
+        p.dfn += clegs.dfn
+        sleep(1)
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
         if p.playclass == 'Rogue' or p.playclass == 'Mage':
@@ -200,7 +205,7 @@ def sharkf():
                 return f
 
         print('You have won this battle!')
-        p.cur += m4.cur
+        p.cur += ran110
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
         if p.playclass == 'Rogue' or p.playclass == 'Mage':
@@ -246,7 +251,7 @@ def kobaldf():
                 return f
 
         print('You have won this battle!')
-        p.cur += m5.cur
+        p.cur += ran1020
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
         if p.playclass == 'Rogue' or p.playclass == 'Mage':
@@ -292,7 +297,7 @@ def hydraf():
                 return f
 
         print('You have won this battle!')
-        p.cur += m6.cur
+        p.cur += ran110
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
         if p.playclass == 'Rogue' or p.playclass == 'Mage':
@@ -339,7 +344,7 @@ def lizardf():
                 return f
 
         print('You have won this battle!')
-        p.cur += m7.cur
+        p.cur += ran1100
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
         if p.playclass == 'Rogue' or p.playclass == 'Mage':
@@ -386,8 +391,13 @@ def cetusf():
 
         print("NOOOO! How? Why? UGGHGGHGHGHGH")
         print(f'You harvested cetus\'s fin and now have {sfin.name}')
-        #Add in stats for the fin here
-        p.cur += b2.cur
+        p.cur += ran1020
+        minv.Sharkfin = "yes"
+        print('You received', {sfin.name})
+        p.hp += sfin.hp
+        p.atk += sfin.atk
+        p.dfn += sfin.dfn
+        sleep(2)
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
     elif fight == "N":
@@ -425,7 +435,12 @@ def genvilf():
 
         print("You bested me, no one has ever... done.... that...")
         minv.phat = 'yes'
-        p.cur += b3.cur
+        p.cur += ran2575
+        print('You received', {pihat.name})
+        p.hp += pihat.hp
+        p.atk += pihat.atk
+        p.dfn += pihat.dfn
+        sleep(1)
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
     elif fight == "N":
@@ -462,6 +477,12 @@ def persephonef():
 
         print("I do not wish to fight you anymore. It is clear that your are stronger than I am. Here take this and run.")
         p.cur += b4.cur
+        minv.persbles = "yes"
+        print('You received', {pb.name})
+        p.hp += pb.hp
+        p.atk += pb.atk
+        p.dfn += pb.dfn
+        sleep(1)
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
     elif fight == "N":
@@ -498,6 +519,12 @@ def darknessf():
 
         print("No, no, no, no, no... This can't be happening!!! For your triumph over me you get (generic item)")
         p.cur += b7.cur
+        minv.gweapon = "yes"
+        print('You received', {gw.name})
+        p.hp += gw.hp
+        p.atk += gw.atk
+        p.dfn += gw.dfn
+        sleep(1)
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
     elif fight == "N":
