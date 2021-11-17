@@ -5,6 +5,7 @@ from time import sleep
 
 def fight1():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print('The villagers send you to fight off a giant rat!')
     print(f'The rat has {m1.hp} hp.')
     matk = m1.atk - p.dfn
@@ -37,6 +38,7 @@ def fight1():
 
 def fight2():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {m2.type} named {b2.name}.')
     print(f'It has {m2.hp} hp.')
     matk = m2.atk - p.dfn
@@ -81,6 +83,7 @@ def fight2():
 
 def mazef():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {b1.type} named {b1.name}..')
     print(f'She has {b1.hp} hp.')
     matk = b1.atk - p.dfn
@@ -117,6 +120,7 @@ def mazef():
 
 def crabf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {m3.type} named {b2.name}.')
     print(f'It has {m3.hp} hp.')
     matk = m3.atk - p.dfn
@@ -162,6 +166,7 @@ def crabf():
 
 def sharkf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {m4.type} named {b2.name}.')
     print(f'It has {m4.hp} hp.')
     matk = m4.atk - p.dfn
@@ -207,6 +212,7 @@ def sharkf():
 
 def kobaldf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {m5.type} named {b2.name}.')
     print(f'It has {m5.hp} hp.')
     matk = m5.atk - p.dfn
@@ -252,6 +258,7 @@ def kobaldf():
 
 def hydraf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {m6.type} named {b2.name}.')
     print(f'It has {m6.hp} hp.')
     matk = m6.atk - p.dfn
@@ -298,6 +305,7 @@ def hydraf():
 
 def lizardf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {m7.type} named {m7.name}.')
     print(f'It has {m7.hp} hp.')
     matk = m7.atk - p.dfn
@@ -343,6 +351,7 @@ def lizardf():
 
 def cetusf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {b2.type} named {b2.name}..')
     print(f'He has {b2.hp} hp.')
     matk = b2.atk - p.dfn
@@ -379,6 +388,7 @@ def cetusf():
 
 def genvilf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {b3.type} named {b3.name}..')
     print(f'It has {b3.hp} hp.')
     matk = b3.atk - p.dfn
@@ -415,6 +425,7 @@ def genvilf():
 
 def persephonef():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {b4.type} named {b4.name}..')
     print(f'She has {b4.hp} hp.')
     matk = b4.atk - p.dfn
@@ -450,6 +461,7 @@ def persephonef():
 
 def darknessf():
     php = p.hp
+    print(f'You have {p.hp} health.')
     print(f'You run into a {b7.type} named {b7.name}..')
     print(f'It has {b7.hp} hp.')
     matk = b7.atk - p.dfn
