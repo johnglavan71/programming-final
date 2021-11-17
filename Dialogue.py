@@ -28,6 +28,10 @@
 # I live in a constant state of fear and misery.
 
 from time import sleep
+from Player import p
+from Inventory import minv
+from Items import stick, ts, rd, wc
+from Fights import fight1
 
 
 def trader():  # place in starting village (assuming its the first NPC the player meets)
@@ -259,3 +263,167 @@ def hades():  # EE boss John write your characters dialog you know it best
     # if "cerb" loses
     print("I see you have come farther than anyone has ever expected of you. Here take this and i will return to the underworld.")
     #give crab
+
+
+def trader_inventory():
+    if p.playclass == 'Mage':
+        if minv.wand == 'yes':
+            print('I have nothing else for you')
+        else:
+            print('I have something that I feel like would suit you perfectly.')
+            sleep(2)
+            print('Here it is!')
+            print('I can sell you the',stick.name)
+            print(f'It will provide you with {stick.hp} hp.')
+            print(f'It gives {stick.dfn} defence.')
+            print(f'The spell the wand comes with will do {stick.atk} damage.')
+            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            if buy == 'Y' or buy == 'y':
+                if p.cur < 100:
+                    print('You do not have enough money for that. I suggest that you go onto your first quest.')
+                    go = input('Do you want to go onto your first quest? Y/N : ')
+                    if go == 'Y' or go == 'y':
+                        Fights.fight1()
+                        trader_inventory()
+                    elif go == 'n' or go == 'N':
+                        print('Then please come back later.')
+                    else:
+                        print('You must not have heard my right.')
+                        trader_inventory()
+                elif p.cur >= 100:
+                    p.cur -= 100
+                    minv.wand = 'yes'
+                    p.hp += stick.hp
+                    p.atk += stick.atk
+                    p.dfn += stick.dfn
+                    print(f'You now have {p.cur} gold coins.')
+                    print(f'You now have {p.hp} health.')
+                    print(f'You now do {p.atk} damage')
+                    print(f'You now have {p.dfn} decence.')
+            elif buy == 'N' or buy == 'n':
+                print('Very well then. However this is all i have to offer so please have a nice day.')
+            else:
+                print('Not sure I understand you. Lets try this again.')
+                trader_inventory()
+    elif p.playclass == 'Barbarian':
+        if minv.club == 'yes':
+            print('I have nothing else for you')
+        else:
+            print('I have something that I feel like would suit you perfectly.')
+            sleep(2)
+            print('Here it is!')
+            print('I can sell you the',wc.name)
+            print(f'It will provide you with {wc.hp} hp.')
+            print(f'It gives {wc.dfn} defence.')
+            print(f'This basic club will do {wc.atk} damage.')
+            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            if buy == 'Y' or buy == 'y':
+                if p.cur < 100:
+                    print('You do not have enough money for that. I suggest that you go onto your first quest.')
+                    go = input('Do you want to go onto your first quest? Y/N : ')
+                    if go == 'Y' or go == 'y':
+                        Fights.fight1()
+                        trader_inventory()
+                    elif go == 'n' or go == 'N':
+                        print('Then please come back later.')
+                    else:
+                        print('You must not have heard my right.')
+                        trader_inventory()
+                elif p.cur >= 100:
+                    p.cur -= 100
+                    minv.club = 'yes'
+                    p.hp += wc.hp
+                    p.atk += wc.atk
+                    p.dfn += wc.dfn
+                    print(f'You now have {p.cur} gold coins.')
+                    print(f'You now have {p.hp} health.')
+                    print(f'You now do {p.atk} damage')
+                    print(f'You now have {p.dfn} decence.')
+            elif buy == 'N' or buy == 'n':
+                print('Very well then. However this is all i have to offer so please have a nice day.')
+            else:
+                print('Not sure I understand you. Lets try this again.')
+                trader_inventory()
+    elif p.playclass == 'Knight':
+        if minv.sword == 'yes':
+            print('I have nothing else for you')
+        else:
+            print('I have something that I feel like would suit you perfectly.')
+            sleep(2)
+            print('Here it is!')
+            print('I can sell you the',ts.name)
+            print(f'It will provide you with {ts.hp} hp.')
+            print(f'It gives {ts.dfn} defence.')
+            print(f'This sword can do {ts.atk} damage.')
+            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            if buy == 'Y' or buy == 'y':
+                if p.cur < 100:
+                    print('You do not have enough money for that. I suggest that you go onto your first quest.')
+                    go = input('Do you want to go onto your first quest? Y/N : ')
+                    if go == 'Y' or go == 'y':
+                        Fights.fight1()
+                        trader_inventory()
+                    elif go == 'n' or go == 'N':
+                        print('Then please come back later.')
+                    else:
+                        print('You must not have heard my right.')
+                        trader_inventory()
+                elif p.cur >= 100:
+                    p.cur -= 100
+                    minv.sword = 'yes'
+                    p.hp += ts.hp
+                    p.atk += ts.atk
+                    p.dfn += ts.dfn
+                    print(f'You now have {p.cur} gold coins.')
+                    print(f'You now have {p.hp} health.')
+                    print(f'You now do {p.atk} damage')
+                    print(f'You now have {p.dfn} decence.')
+            elif buy == 'N' or buy == 'n':
+                print('Very well then. However this is all i have to offer so please have a nice day.')
+            else:
+                print('Not sure I understand you. Lets try this again.')
+                trader_inventory()
+    elif p.playclass == 'Rogue':
+        if minv.dagger == 'yes':
+            print('I have nothing else for you')
+        else:
+            print('I have something that I feel like would suit you perfectly.')
+            sleep(2)
+            print('Here it is!')
+            print('I can sell you the',rd.name)
+            print(f'It will provide you with {rd.hp} hp.')
+            print(f'It gives {rd.dfn} defence.')
+            print(f'You brand new knife should do {rd.atk} damage.')
+            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            if buy == 'Y' or buy == 'y':
+                if p.cur < 100:
+                    print('You do not have enough money for that. I suggest that you go onto your first quest.')
+                    go = input('Do you want to go onto your first quest? Y/N : ')
+                    if go == 'Y' or go == 'y':
+                        Fights.fight1()
+                        trader_inventory()
+                    elif go == 'n' or go == 'N':
+                        print('Then please come back later.')
+                    else:
+                        print('You must not have heard my right.')
+                        trader_inventory()
+                elif p.cur >= 100:
+                    p.cur -= 100
+                    minv.dagger = 'yes'
+                    p.hp += rd.hp
+                    p.atk += rd.atk + 5 #added 5 for poison damage because of the rust
+                    p.dfn += rd.dfn
+                    print(f'You now have {p.cur} gold coins.')
+                    print(f'You now have {p.hp} health.')
+                    print(f'You now do {p.atk} damage')
+                    print(f'You now have {p.dfn} decence.')
+            elif buy == 'N' or buy == 'n':
+                print('Very well then. However this is all i have to offer so please have a nice day.')
+            else:
+                print('Not sure I understand you. Lets try this again.')
+                trader_inventory()
+    else:
+        print('If your reading this your character shouldnt exist.')
+        sleep(4)
+        quit()
+trader_inventory()

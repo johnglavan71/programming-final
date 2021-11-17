@@ -13,9 +13,9 @@ class monster:
 def villagemonster():
     name = 'The Fat Rat'
     type = 'Rat'
-    hp = 15
-    dfn = 10
-    atk = 15
+    hp = 10
+    dfn = 0
+    atk = 1
     cur = 5
     m1 = monster(name, type, hp, dfn, atk, cur)
     return m1
@@ -97,10 +97,10 @@ m7 = gbmonster()
 def mazeboss():
     name= 'Medusa'
     type= 'Gorgon'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b1 = monster(name, type, hp, dfn, atk, cur)
     return b1
 b1 = mazeboss()
@@ -109,10 +109,10 @@ b1 = mazeboss()
 def cetusboss():
     name= 'Cetus'
     type= 'Big Ass God Damn Whale'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b2 = monster(name, type, hp, dfn, atk, cur)
     return b2
 b2 = cetusboss()
@@ -121,10 +121,10 @@ b2 = cetusboss()
 def genvillan():
     name= 'Unknown'
     type= 'Unknown'
-    hp = '?'
-    dfn = '?'
-    atk = '?'
-    cur = '?'
+    hp = 1
+    dfn = 1
+    atk = 1
+    cur = 1
     b3 = monster(name, type, hp, dfn, atk, cur)
     return b3
 b3 = genvillan()
@@ -133,10 +133,10 @@ b3 = genvillan()
 def persephoneboss():
     name= 'Persephone'
     type= 'Goddess'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b4 = monster(name, type, hp, dfn, atk, cur)
     return b4
 b4 = persephoneboss()
@@ -145,10 +145,10 @@ b4 = persephoneboss()
 def cerb():
     name= 'Cerberus'
     type= '3 Headed Doge'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b5 = monster(name, type, hp, dfn, atk, cur)
     return b5
 B5 = cerb()
@@ -157,10 +157,10 @@ B5 = cerb()
 def hades():
     name= 'Hades'
     type= 'God of the Underworld'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b5 = monster(name, type, hp, dfn, atk, cur)
     return b5
 b5 = hades()
@@ -169,10 +169,10 @@ b5 = hades()
 def thegreatweasel():
     name= 'The Great Weasel'
     type= 'Regular Sized Weasel'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b6 = monster(name, type, hp, dfn, atk, cur)
     return b6
 b6 = thegreatweasel()
@@ -181,10 +181,10 @@ b6 = thegreatweasel()
 def mcboss():
     name= '?'
     type= '?'
-    hp= '?'
-    dfn= '?'
-    atk= '?'
-    cur= '?'
+    hp= 1
+    dfn= 1
+    atk= 1
+    cur= 1
     b7 = monster(name, type, hp, dfn, atk, cur)
     return b7
 b7 = mcboss()

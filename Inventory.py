@@ -20,28 +20,28 @@ class pinv:
         self.dagger = dagger
 
 def main_inventory():
-    r = "no"
-    q = "no"
-    p = "no"
-    o = "no"
-    n = "no"
-    m = "no"
-    l = "no"
-    k = "no"
-    j = "no"
-    i = "no"
-    h = "no"
-    g = "no"
-    f = "no"
-    e = "no"
-    d = "no"
-    c = "no"
-    b = "no"
-    a = "no"
-    minv = pinv(r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c, b, a)
+    boat1 = 'no'
+    medhead = 'no'
+    m_c = 'no'
+    phat = 'no'
+    Sharkfin = 'no'
+    gweapon = 'no'
+    kth = 'no'
+    genacc = 'no'
+    food = 'no'
+    hcrab = 'no'
+    persbles = 'no'
+    Lbolt = 'no'
+    lores = 'no'
+    cerb = 'no'
+    club = 'no'
+    wand = 'no'
+    sword = 'no'
+    dagger = 'no'
+    minv = pinv(boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, Lbolt, lores, cerb, club, wand,sword, dagger)
+    return minv
 
-    print(minv.sword)
-main_inventory()
+minv = main_inventory()
 
 
 
