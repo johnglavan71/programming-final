@@ -245,6 +245,12 @@ def hades():  # EE boss John write your characters dialog you know it best
     print('The room is full of fire, almost like you just returned to hell.')
     sleep(1)
     print('Cerberus howls and runs to greet the man in the chair.')
+    p.hp -= dog.hp
+    p.dfn -= dog.dfn
+    p.atk -= dog.atk
+    print(f'You now have {p.hp} health.')
+    print(f'You now have {p.dfn} defence.')
+    print(f'You now do {p.atk} damage.')
     print("The man is Hades God of the Underworld")
     sleep(1)
     print('"Welcome, It must have ben a long journey here young traveler.')
@@ -252,17 +258,6 @@ def hades():  # EE boss John write your characters dialog you know it best
     sleep(1)
     print("Get ready! You first battle will not be against me but Cerberus will take you on.")
     sleep(1)
-    # initate battle of cerb
-    # if "cerb" wins
-    print("Master have I done well? I didnt know this traveler was so WEAK!")
-    # if "cerb" loses
-    print("Rest now Cerberus for it is time for me to exact your revenge")
-    #initaite battle of hades
-    # if "hades" wins
-    print("You cannot truly believe you can beat a GOD do you?!")
-    # if "cerb" loses
-    print("I see you have come farther than anyone has ever expected of you. Here take this and i will return to the underworld.")
-    #give crab
 
 
 def trader_inventory():

@@ -590,5 +590,85 @@ def weaself():
     print(f'You now have {p.cur} gold coins!\n')
     return p.cur
 
+def Cerbf():
+    php = p.hp
+    print(f'You have {p.hp} health.')
+    print(f'You run into a {B5.type} named {B5.name}..')
+    print(f'It has {B5.hp} hp.')
+    matk = B5.atk - p.dfn
+    print('It does', matk, 'damage.')
+    patk = p.atk - B5.dfn
+    print('You do', patk, 'damage, and have', php, 'hp.')
+    while B5.hp > 0:
+        print(f'{B5.name} attacks.\n It deals {matk} damage.')
+        php -= matk
+        print(f'You have {php} hp left.\n')
+        sleep(3)
+        if php <= 0:
+            print("Master have I done well? I didnt know this traveler was so WEAK!")
+            f = 'f'
+            return f
+        print(f'{B5.name} attacks.\n It deals {matk} damage.')
+        php -= matk
+        print(f'You have {php} hp left.\n')
+        sleep(3)
+        if php <= 0:
+            print("Master have I done well? I didnt know this traveler was so WEAK!")
+            f = 'f'
+            return f
+        print(f'{B5.name} attacks.\n It deals {matk} damage.')
+        php -= matk
+        print(f'You have {php} hp left.\n')
+        sleep(3)
+        if php <= 0:
+            print("Master have I done well? I didnt know this traveler was so WEAK!")
+            f = 'f'
+            return f
+        print(f'You attack the {B5.type}.\n You deal {patk} damage.')
+        B5.hp -= patk
+        print(f'{B5.name} has {B5.hp} hp left.\n')
+        sleep(3)
+        if B5.hp <= 0:
+            break
+    print("Rest now Cerberus for it is time for me to exact your revenge")
+    Hadesf()
+    return p.cur
+
+
+def Hadesf():
+    php = p.hp
+    print(f'You have {p.hp} health.')
+    print(f'You run into a {b5.type} named {b5.name}..')
+    print(f'It has {b5.hp} hp.')
+    matk = b5.atk - p.dfn
+    print('It does', matk, 'damage.')
+    patk = p.atk - b5.dfn
+    print('You do', patk, 'damage, and have', php, 'hp.')
+    while b5.hp > 0:
+        print(f'{b5.name} attacks.\n It deals {matk} damage.')
+        php -= matk
+        print(f'You have {php} hp left.\n')
+        sleep(3)
+        if php <= 0:
+            print("You cannot truly believe you can beat a GOD do you?!")
+            f = 'f'
+            return f
+        print(f'You attack the {b5.type}.\n You deal {patk} damage.')
+        b5.hp -= patk
+        print(f'{b5.name} has {b5.hp} hp left.\n')
+        sleep(3)
+        if b5.hp <= 0:
+            break
+    print("I see you have come farther than anyone has ever expected of you. Here take this and i will return to the underworld.")
+    print('Congrats You BEAT the game!!!!!! WOO Hope we wasted your time with the weasel!')
+    sleep(60)
+    print('Oh Your still here. Well i guess ill make all of your stats maxed out.')
+    p.hp = 1000000000000
+    p.atk = 1000000000000
+    p.dfn = 1000000000000
+    print('Sorry for the wait your stats have been changed.')
+
+    return p.cur
+
 
 

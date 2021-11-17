@@ -149,8 +149,8 @@ def cerb():
     dfn= 1
     atk= 1
     cur= 1
-    b5 = monster(name, type, hp, dfn, atk, cur)
-    return b5
+    B5 = monster(name, type, hp, dfn, atk, cur)
+    return B5
 B5 = cerb()
 
 
