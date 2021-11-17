@@ -67,7 +67,7 @@ sfin = Sharkfin()
 #Generic item from the mych randomized
 def gweapon():#sehdifhcifibhsufgcsuyfsiuyfiushfoiushgoihsoiughsoihgsoihgosih
     nameme = '(Generic Weapon)'
-    hp = Randomizer.ran110()
+    hp = 0
     dfn = 0
     atk = 0
     gw = items(nameme, hp, dfn, atk)
