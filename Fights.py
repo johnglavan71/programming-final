@@ -13,13 +13,13 @@ def fight1():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y':
         while m1.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m1.hp -= patk
-            print(f'Monster has {m1.hp} hp left.\n')
-            sleep(2)
+            print(f'Monster has {m1.hp} hp left.')
+            sleep(3)
             if m1.hp <= 0:
                 break
-            print(f'The monster attacks.\n It deals {matk} damage.\n')
+            print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
             if p.hp <= 0:
@@ -42,10 +42,10 @@ def fight2():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while m2.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m2.hp -= patk
             print(f'Monster has {m2.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if m2.hp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
@@ -84,10 +84,10 @@ def mazef():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while b1.hp > 0:
-            print(f'\nYou attack the {b1.type}.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the {b1.type}.\n You deal {patk} damage.')
             b1.hp -= patk
             print(f'{b1.name} has {b1.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if b1.hp <= 0:
                 break
             print(f'{b1.name} attacks.\n She deals {matk} damage.')
@@ -118,10 +118,10 @@ def crabf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while m3.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m3.hp -= patk
             print(f'Monster has {m3.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if m3.hp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
@@ -161,10 +161,10 @@ def sharkf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while m4.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m4.hp -= patk
             print(f'Monster has {m4.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if m4.hp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
@@ -204,10 +204,10 @@ def kobaldf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while m5.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m5.hp -= patk
             print(f'Monster has {m5.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if m5.hp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
@@ -247,10 +247,10 @@ def hydraf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while m6.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m6.hp -= patk
             print(f'Monster has {m6.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if m6.hp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
@@ -291,10 +291,10 @@ def lizardf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while m7.hp > 0:
-            print(f'\nYou attack the monster.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the monster.\n You deal {patk} damage.')
             m7.hp -= patk
             print(f'Monster has {m7.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if m7.hp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
@@ -334,10 +334,10 @@ def cetusf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while b2.hp > 0:
-            print(f'\nYou attack the {b2.type}.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the {b2.type}.\n You deal {patk} damage.')
             b2.hp -= patk
             print(f'{b2.name} has {b2.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if b2.hp <= 0:
                 break
             print(f'{b2.name} attacks.\n He deals {matk} damage.')
@@ -368,10 +368,10 @@ def genvilf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while b3.hp > 0:
-            print(f'\nYou attack the {b3.type}.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the {b3.type}.\n You deal {patk} damage.')
             b3.hp -= patk
             print(f'{b3.name} has {b3.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if b3.hp <= 0:
                 break
             print(f'{b3.name} attacks.\n It deals {matk} damage.')
@@ -402,10 +402,10 @@ def persephonef():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while b4.hp > 0:
-            print(f'\nYou attack the {b4.type}.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the {b4.type}.\n You deal {patk} damage.')
             b4.hp -= patk
             print(f'{b4.name} has {b4.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if b4.hp <= 0:
                 break
             print(f'{b4.name} attacks.\n She deals {matk} damage.')
@@ -435,10 +435,10 @@ def darknessf():
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
         while b7.hp > 0:
-            print(f'\nYou attack the {b7.type}.\n You deal {patk} damage.\n')
+            print(f'\nYou attack the {b7.type}.\n You deal {patk} damage.')
             b7.hp -= patk
             print(f'{b7.name} has {b7.hp} hp left.')
-            sleep(2)
+            sleep(3)
             if b7.hp <= 0:
                 break
             print(f'{b7.name} attacks.\n It deals {matk} damage.')
