@@ -30,12 +30,12 @@ def classc():
         hp = 10
         dfn = 0
         atk = 1
-        cur = 99
+        cur = 5
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Barbarian':
-        hp = 150
-        dfn = 5
+        hp = 10
+        dfn = 0
         atk = 150
         cur = 100
         bsmith = 1

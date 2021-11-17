@@ -51,7 +51,6 @@ def phat():#koishofgiuhsoiufhosihfoishgoishgioesn
     pihat = items(nameme, hp, dfn, atk)
     return pihat
 pihat = phat()
-print(pihat.dfn)
 
 #Shark Fin
 def Sharkfin():#BJSOIUHFIHOIFDHSAOIUHFOIUSHFSIUHFIOSUHFOSIUHSOHSOFIhoiahofiaoih
@@ -114,7 +113,7 @@ def wcrab():
     atk = (0-1000000)
     hc = items(nameme, hp, dfn, atk)
     return hc
-hc = hcrab()
+hc = wcrab()
 
 def wcrab2():
     nameme = "Weasel's Super Friend"
@@ -123,7 +122,7 @@ def wcrab2():
     atk = ran1001000
     hc = items(nameme, hp, dfn, atk)
     return hc
-hc = hcrab()
+hc = wcrab2()
 
 #mountains
 #from pp
