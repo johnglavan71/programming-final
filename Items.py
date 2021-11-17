@@ -1,5 +1,5 @@
 from Player import p
-import Randomizer
+from Randomizer import *
 
 class items:
     # type is the class you choose
@@ -24,8 +24,8 @@ boat = boat1()
 def medhead():#oshdfiushdafiwuicsahiueyhcryfcbywubcfysudhaiudhiuahfioa
     nameme = 'Medusas Head'
     hp = 0
-    dfn = 20
-    atk = 0
+    dfn = 5
+    atk = 5
     mhead = items(nameme, hp, dfn, atk)
     return mhead
 mhead=medhead()
@@ -35,7 +35,7 @@ mhead=medhead()
 #magic conch
 def m_c():
     nameme = 'Magic Conch'
-    hp = 0
+    hp = 10
     dfn = 0
     atk = 0
     mc = items(nameme, hp, dfn, atk)
@@ -46,17 +46,18 @@ mc = m_c()
 def phat():#koishofgiuhsoiufhosihfoishgoishgioesn
     nameme = 'Pirates Hat'
     hp = 0
-    dfn = 0
-    atk = 0
+    dfn = ran110
+    atk = ran1020
     pihat = items(nameme, hp, dfn, atk)
     return pihat
 pihat = phat()
+print(pihat.dfn)
 
 #Shark Fin
 def Sharkfin():#BJSOIUHFIHOIFDHSAOIUHFOIUSHFSIUHFIOSUHFOSIUHSOHSOFIhoiahofiaoih
     nameme = 'Sharks Fin'
-    hp = 0
-    dfn = 0
+    hp = 10
+    dfn = 10
     atk = 0
     sharkfin = items(nameme, hp, dfn, atk)
     return sharkfin
@@ -67,9 +68,9 @@ sfin = Sharkfin()
 #Generic item from the mych randomized
 def gweapon():#sehdifhcifibhsufgcsuyfsiuyfiushfoiushgoihsoiughsoihgsoihgosih
     nameme = '(Generic Weapon)'
-    hp = 0
+    hp = ran110
     dfn = 0
-    atk = 0
+    atk = ran1020
     gw = items(nameme, hp, dfn, atk)
     return gw
 gw = gweapon()
@@ -87,8 +88,8 @@ key = kth()
 #Generic accesory randomized`
 def genacc():
     nameme = '(Generic Accesory)'
-    hp = 0
-    dfn = 0
+    hp = ran15
+    dfn = ran110
     atk = 0
     ga = items(nameme, hp, dfn, atk)
     return ga
@@ -98,7 +99,7 @@ ga = genacc()
 #From cv
 def food():
     nameme = 'Bread'
-    hp = 0
+    hp = ran15
     dfn = 0
     atk = 0
     Bread = items(nameme, hp, dfn, atk)
@@ -106,11 +107,20 @@ def food():
 bread = food()
 
 #hades crab lol
-def hcrab():
-    nameme = "Hades Crab"
-    hp = 0
-    dfn = 0
-    atk = 0
+def wcrab():
+    nameme = "Weasel's Pissed Off Friend"
+    hp = (0-1000000)
+    dfn = (0-1000000)
+    atk = (0-1000000)
+    hc = items(nameme, hp, dfn, atk)
+    return hc
+hc = hcrab()
+
+def wcrab2():
+    nameme = "Weasel's Super Friend"
+    hp = ran1001000
+    dfn = ran1001000
+    atk = ran1001000
     hc = items(nameme, hp, dfn, atk)
     return hc
 hc = hcrab()
@@ -119,39 +129,29 @@ hc = hcrab()
 #from pp
 def persbles():#siuhfihsvfichsifhsiohfciuwhsfiuchsiufhcsiuhfsiuchsdggsdg
     nameme = "Persephone's Blessing"
-    hp = 0
-    dfn = 0
+    hp = ran1020
+    dfn = ran1020
     atk = 0
     pb = items(nameme, hp, dfn, atk)
     return pb
 pb = persbles()
 
 #from zeus
-def Lbolt():
-    nameme = 'Lightning Bolt'
-    hp = 0
-    dfn = 0
+def clegs():
+    nameme = 'Crab Legs'
+    hp = 20
+    dfn = 10
     atk = 0
-    lb = items(nameme, hp, dfn, atk)
-    return lb
-lb = Lbolt()
-
-#boss
-def lores():
-    nameme = 'Lore'
-    hp = 0
-    dfn = 0
-    atk = 0
-    lore = items(nameme, hp, dfn, atk)
-    return lore
-lore = lores()
+    cl = items(nameme, hp, dfn, atk)
+    return cl
+cl = clegs()
 
 #hell
 def cerb():
     nameme = 'Cerberus'
-    hp = 0
-    dfn = 0
-    atk = 0
+    hp = ran120
+    dfn = ran120
+    atk = ran120
     dog = items(nameme, hp, dfn, atk)
     return dog
 dog = cerb()
@@ -160,9 +160,9 @@ dog = cerb()
 #barbarian
 def club():
     nameme = 'Wooden Club'
-    hp = 0
-    dfn = 0
-    atk = 0
+    hp = 9
+    dfn = 9
+    atk = 9
     wc = items(nameme, hp, dfn, atk)
     return wc
 wc = club()
@@ -170,9 +170,9 @@ wc = club()
 #wizard
 def wand():
     nameme = 'Magic Stick'
-    hp = 0
-    dfn = 0
-    atk = 0
+    hp = 10
+    dfn = 5
+    atk = 14
     stick = items(nameme, hp, dfn, atk)
     return stick
 stick = wand()
@@ -180,9 +180,9 @@ stick = wand()
 #knight
 def sword():
     nameme = 'Training Sword'
-    hp = 0
-    dfn = 0
-    atk = 0
+    hp = 9
+    dfn = 19
+    atk = 14
     ts = items(nameme, hp, dfn, atk)
     return ts
 ts = sword()
@@ -192,7 +192,7 @@ def dagger():
     nameme = 'Rusty Dagger'
     hp = 0
     dfn = 0
-    atk = 0
+    atk = 14
     rd = items(nameme, hp, dfn, atk)
     return rd
 rd = dagger()
