@@ -1,5 +1,5 @@
 class pinv:
-    def __init__(self, boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, Lbolt, lores, cerb, club, wand, sword, dagger):
+    def __init__(self, boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, clegs, lores, cerb, club, wand, sword, dagger):
         self.boat1 = boat1
         self.medhead = medhead
         self.m_c = m_c
@@ -11,7 +11,7 @@ class pinv:
         self.food = food
         self.hcrab = hcrab
         self.persbles = persbles
-        self.Lbolt = Lbolt
+        self.clegs = clegs
         self.lores = lores
         self.cerb = cerb
         self.club = club
@@ -31,14 +31,14 @@ def main_inventory():
     food = 'no'
     hcrab = 'no'
     persbles = 'no'
-    Lbolt = 'no'
+    clegs = 'no'
     lores = 'no'
     cerb = 'no'
     club = 'no'
     wand = 'no'
     sword = 'no'
     dagger = 'no'
-    minv = pinv(boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, Lbolt, lores, cerb, club, wand,sword, dagger)
+    minv = pinv(boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, clegs, lores, cerb, club, wand,sword, dagger)
     return minv
 
 minv = main_inventory()

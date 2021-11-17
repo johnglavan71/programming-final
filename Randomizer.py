@@ -24,6 +24,11 @@ def ran120():
     return ran120
 ran120 = ran120()
 
+def ran2575():
+    ran2575 = random.ranint(25, 75)
+    return ran2575
+ran2575 = ran2575()
+
 def ran1100():
     ran1100 = random.randint(1,101)
     return ran1100
