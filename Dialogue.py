@@ -77,7 +77,7 @@ def yggdrasil():  # Make it sound like an old wise man telling stories about pas
     print("I've seen many travelers like you move through these parts in search of justice, you look kind maybe i can help you out")
     sleep(1)
     print("Here is a token for your kindness, to help you sail these treterous waters")
-    # gives boat on this line idk the command
+    minv.boat1 = 'yes'
     sleep(1)
 
 
@@ -89,10 +89,6 @@ def cetus_boss():  # boss spot in cthullu
     print("You're the traveler I've heard so much about.")
     sleep(1)
     print("These waters work in my favor, good luck in this battle..")
-    #initate battle
-    #if cetus wins
-
-    #if cetus loses
 
 
 
@@ -117,7 +113,7 @@ def castle_trader():  # place in castle village
     sleep(1)
     print("'WAIT!! I know you! Looks like we both made passage to the castle!")
     sleep(1)
-    cta = input("'Hope your adventures have been as well as mine. Want to take a look at my updated inventory?'\n"
+    cta = input("'Hope your adventures have been as well as mine. Want to take a look at my new inventory?'\n"
           "yes or no?")
     if cta == "yes" or cta == "Yes" or cta == "YES":
         print("Very well then..")
@@ -126,7 +122,6 @@ def castle_trader():  # place in castle village
     elif cta == "no" or cta == "No" or cta == "NO":
         print("Come back anytime old friend. Ill be here")
         sleep(1)
-        cv()
     else:
         print("Seems to me like you still have that hearing problem. ")
         sleep(1)
@@ -283,7 +278,7 @@ def trader_inventory():
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
-                        Fights.fight1()
+                        fight1()
                         trader_inventory()
                     elif go == 'n' or go == 'N':
                         print('Then please come back later.')
@@ -299,7 +294,7 @@ def trader_inventory():
                     print(f'You now have {p.cur} gold coins.')
                     print(f'You now have {p.hp} health.')
                     print(f'You now do {p.atk} damage')
-                    print(f'You now have {p.dfn} decence.')
+                    print(f'You now have {p.dfn} defence.')
             elif buy == 'N' or buy == 'n':
                 print('Very well then. However this is all i have to offer so please have a nice day.')
             else:
@@ -322,7 +317,7 @@ def trader_inventory():
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
-                        Fights.fight1()
+                        fight1()
                         trader_inventory()
                     elif go == 'n' or go == 'N':
                         print('Then please come back later.')
@@ -338,7 +333,7 @@ def trader_inventory():
                     print(f'You now have {p.cur} gold coins.')
                     print(f'You now have {p.hp} health.')
                     print(f'You now do {p.atk} damage')
-                    print(f'You now have {p.dfn} decence.')
+                    print(f'You now have {p.dfn} defence.')
             elif buy == 'N' or buy == 'n':
                 print('Very well then. However this is all i have to offer so please have a nice day.')
             else:
@@ -361,7 +356,7 @@ def trader_inventory():
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
-                        Fights.fight1()
+                        fight1()
                         trader_inventory()
                     elif go == 'n' or go == 'N':
                         print('Then please come back later.')
@@ -377,7 +372,7 @@ def trader_inventory():
                     print(f'You now have {p.cur} gold coins.')
                     print(f'You now have {p.hp} health.')
                     print(f'You now do {p.atk} damage')
-                    print(f'You now have {p.dfn} decence.')
+                    print(f'You now have {p.dfn} defence.')
             elif buy == 'N' or buy == 'n':
                 print('Very well then. However this is all i have to offer so please have a nice day.')
             else:
@@ -400,7 +395,7 @@ def trader_inventory():
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
-                        Fights.fight1()
+                        fight1()
                         trader_inventory()
                     elif go == 'n' or go == 'N':
                         print('Then please come back later.')
@@ -416,7 +411,7 @@ def trader_inventory():
                     print(f'You now have {p.cur} gold coins.')
                     print(f'You now have {p.hp} health.')
                     print(f'You now do {p.atk} damage')
-                    print(f'You now have {p.dfn} decence.')
+                    print(f'You now have {p.dfn} defence.')
             elif buy == 'N' or buy == 'n':
                 print('Very well then. However this is all i have to offer so please have a nice day.')
             else:
@@ -426,4 +421,24 @@ def trader_inventory():
         print('If your reading this your character shouldnt exist.')
         sleep(4)
         quit()
-trader_inventory()
+
+def castle_trader_inventory():
+    if minv.bread == "yes":
+        print('You already bought all my wares')
+    else:
+        print('Sadly I didnt get much in the line of item on my travels here.')
+        print("However I did collect a delicacy from the castle further past this village.")
+        print('Its this wonderful bread baked to perfection with some chocolate chips mixed in.')
+        buy = input('Would you like to buy it? I can sell it to you for 20 gold coins.')
+        if buy == 'Y' or buy == 'y':
+            if p.cur < 20:
+                print('You do not have enough money for that. I suggest that you go onto some quests.')
+            elif p.cur >= 20:
+                p.cur -= 20
+                minv.bread = 'yes'
+                print(f'You now have a loaf of bread. I wonder if someones hungry.')
+        elif buy == 'N' or buy == 'n':
+            print('Very well then. However this is all i have to offer so please have a nice day.')
+        else:
+            print('Not sure I understand you. Lets try this again.')
+            trader_inventory()

@@ -16,7 +16,7 @@ def villagemonster():
     hp = 10
     dfn = 0
     atk = 1
-    cur = 5
+    cur =1
     m1 = monster(name, type, hp, dfn, atk, cur)
     return m1
 m1 = villagemonster()
