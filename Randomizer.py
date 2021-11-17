@@ -1,6 +1,6 @@
 import random
 def ran13():
-    ran13 = random.randint(1,3)
+    ran13 = random.randint(1,4)
     return ran13
 ran13 = ran13()
 

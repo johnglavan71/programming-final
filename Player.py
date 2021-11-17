@@ -2,13 +2,14 @@
 
 class player:
     # type is the class you choose
-    def __init__(self, name, playclass, hp, dfn, atk, cur):
+    def __init__(self, name, playclass, hp, dfn, atk, cur, bsmith):
         self.name = name
         self.playclass = playclass
         self.hp = hp
         self.dfn = dfn
         self.atk = atk
         self.cur = cur
+        self.bsmith = bsmith
 nameme = input('What is your name? : ')
 def retry():
     classc()
@@ -29,26 +30,30 @@ def classc():
         hp = 10
         dfn = 0
         atk = 1
-        cur = 99
-        p = player(nameme, classchoice, hp, dfn, atk, cur)
+        cur = 5
+        bsmith = 1
+        p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Barbarian':
-        hp = 150
-        dfn = 5
+        hp = 10
+        dfn = 0
         atk = 150
         cur = 100
-        p = player(nameme, classchoice, hp, dfn, atk, cur)
+        bsmith = 1
+        p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Knight':
         hp = 100
         dfn = 50
         atk = 125
         cur = 100
-        p = player(nameme, classchoice, hp, dfn, atk, cur)
+        bsmith = 1
+        p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Rogue':
         hp = 10
         dfn = 10
         atk = 100
         cur = 100
-        p = player(nameme, classchoice, hp, dfn, atk, cur)
+        bsmith = 1
+        p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
 
     return p
 

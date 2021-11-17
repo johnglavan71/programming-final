@@ -30,7 +30,7 @@
 from time import sleep
 from Player import p
 from Inventory import minv
-from Items import stick, ts, rd, wc
+from Items import *
 from Fights import fight1
 
 
@@ -58,11 +58,16 @@ def blacksmith():  # place in starting village after trader dialogue
     sleep(1)
     print("I supply weapon and armor upgrades for all of the land.")
     sleep(1)
-    ba = input("Would you like to take a gander at my forged goods? yes or no : ")
+    ba = input(f"Would you like to reforge your weapon it will cost {10 * p.bsmith} gold coins. yes or no : ")
     if ba == "yes":
-        print("You wont be dissapointed!")
-        sleep(1)
-        blacksmith_inventory()
+        if p.cur >= (10 * p.bsmith):
+            print("You wont be dissapointed!")
+            p.bsmith += 1
+            sleep(1)
+            blacksmith_inventory()
+            blacksmith()
+        elif p.cur < (10 * p.bsmith):
+            print('Get out of my shop you peasant!')
     elif ba == "no":
         print("Farewell traveler")
         sleep(1)
@@ -442,3 +447,20 @@ def castle_trader_inventory():
         else:
             print('Not sure I understand you. Lets try this again.')
             trader_inventory()
+
+def blacksmith_inventory():
+    wtc = int(input('What would you like to change? HP: 1 ATK: 2 DFN: 3\nPlease type the number you want to change.'))
+    if wtc == 1:
+        p.hp += ran110
+        print(f'You now have {p.hp} health!')
+    elif wtc == 2:
+        p.atk += ran110
+        print(f'You now do {p.atk} damage!')
+    elif wtc == 3:
+        p.dfn += ran110
+        print(f'You now have {p.dfn} defence!')
+    else:
+        print('If you cant follow the directions im keeping the money!')
+        blacksmith()
+
+blacksmith()
