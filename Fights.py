@@ -17,6 +17,8 @@ def fight1():
             m1.hp -= patk
             print(f'Monster has {m1.hp} hp left.\n')
             sleep(2)
+            if m1.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.\n')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -24,8 +26,7 @@ def fight1():
                 print('You have lost! One of the villagers take you back to their home.')
                 m1.hp = 0
                 return None
-            elif m1.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m1.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -45,6 +46,8 @@ def fight2():
             m2.hp -= patk
             print(f'Monster has {m2.hp} hp left.')
             sleep(2)
+            if m2.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -53,8 +56,7 @@ def fight2():
                 m2.hp = 0
                 f = 'f'
                 return f
-            elif m2.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m2.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -86,6 +88,8 @@ def mazef():
             b1.hp -= patk
             print(f'{b1.name} has {b1.hp} hp left.')
             sleep(2)
+            if b1.hp <= 0:
+                break
             print(f'{b1.name} attacks.\n She deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -94,8 +98,7 @@ def mazef():
                 b1.hp = 0
                 f = 'f'
                 return f
-            elif b1.hp <= 0:
-                break
+
         print("Arrrrggg... your much better then the others traveler... be aware of whats to come")
         p.cur += b1.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -119,6 +122,8 @@ def crabf():
             m3.hp -= patk
             print(f'Monster has {m3.hp} hp left.')
             sleep(2)
+            if m3.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -127,8 +132,7 @@ def crabf():
                 m3.hp = 0
                 f = 'f'
                 return f
-            elif m3.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m3.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -161,6 +165,8 @@ def sharkf():
             m4.hp -= patk
             print(f'Monster has {m4.hp} hp left.')
             sleep(2)
+            if m4.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -169,8 +175,7 @@ def sharkf():
                 m4.hp = 0
                 f = 'f'
                 return f
-            elif m4.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m4.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -203,6 +208,8 @@ def kobaldf():
             m5.hp -= patk
             print(f'Monster has {m5.hp} hp left.')
             sleep(2)
+            if m5.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -211,8 +218,7 @@ def kobaldf():
                 m5.hp = 0
                 f = 'f'
                 return f
-            elif m5.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m5.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -245,6 +251,8 @@ def hydraf():
             m6.hp -= patk
             print(f'Monster has {m6.hp} hp left.')
             sleep(2)
+            if m6.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -253,8 +261,7 @@ def hydraf():
                 m6.hp = 0
                 f = 'f'
                 return f
-            elif m6.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m6.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -288,6 +295,8 @@ def lizardf():
             m7.hp -= patk
             print(f'Monster has {m7.hp} hp left.')
             sleep(2)
+            if m7.hp <= 0:
+                break
             print(f'The monster attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -296,8 +305,7 @@ def lizardf():
                 m7.hp = 0
                 f = 'f'
                 return f
-            elif m7.hp <= 0:
-                break
+
         print('You have won this battle!')
         p.cur += m7.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -330,6 +338,8 @@ def cetusf():
             b2.hp -= patk
             print(f'{b2.name} has {b2.hp} hp left.')
             sleep(2)
+            if b2.hp <= 0:
+                break
             print(f'{b2.name} attacks.\n He deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -338,8 +348,7 @@ def cetusf():
                 b2.hp = 0
                 f = 'f'
                 return f
-            elif b2.hp <= 0:
-                break
+
         print("NOOOO! How? Why? UGGHGGHGHGHGH")
         p.cur += b2.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -363,6 +372,8 @@ def genvilf():
             b3.hp -= patk
             print(f'{b3.name} has {b3.hp} hp left.')
             sleep(2)
+            if b3.hp <= 0:
+                break
             print(f'{b3.name} attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -371,8 +382,7 @@ def genvilf():
                 b3.hp = 0
                 f = 'f'
                 return f
-            elif b3.hp <= 0:
-                break
+
         print("You bested me, no one has ever... done.... that...")
         p.cur += b3.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -396,6 +406,8 @@ def persephonef():
             b4.hp -= patk
             print(f'{b4.name} has {b4.hp} hp left.')
             sleep(2)
+            if b4.hp <= 0:
+                break
             print(f'{b4.name} attacks.\n She deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -403,8 +415,7 @@ def persephonef():
                 print("Im sorry. I did now wish to do this to you. Rest easy I will bring you back to the village.")
                 f = 'f'
                 return f
-            elif b4.hp <= 0:
-                break
+
         print("I do not wish to fight you anymore. It is clear that your are stronger than I am. Here take this and run.")
         p.cur += b4.cur
         print(f'You now have {p.cur} gold coins!\n')
@@ -428,6 +439,8 @@ def darknessf():
             b7.hp -= patk
             print(f'{b7.name} has {b7.hp} hp left.')
             sleep(2)
+            if b7.hp <= 0:
+                break
             print(f'{b7.name} attacks.\n It deals {matk} damage.')
             p.hp -= matk
             print(f'You have {p.hp} hp left.')
@@ -435,8 +448,7 @@ def darknessf():
                 print("Another traveler scared of the dark, eternal rest is your fate now..")
                 f = 'f'
                 return f
-            elif b7.hp <= 0:
-                break
+
         print("No, no, no, no, no... This can't be happening!!! For your triumph over me you get (generic item)")
         p.cur += b7.cur
         print(f'You now have {p.cur} gold coins!\n')

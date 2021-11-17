@@ -13,9 +13,9 @@ class monster:
 def villagemonster():
     name = 'The Fat Rat'
     type = 'Rat'
-    hp = 15
-    dfn = 10
-    atk = 15
+    hp = 10
+    dfn = 0
+    atk = 1
     cur = 5
     m1 = monster(name, type, hp, dfn, atk, cur)
     return m1
