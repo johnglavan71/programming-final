@@ -1,5 +1,5 @@
 class pinv:
-    def __init__(self, boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, clegs, lores, cerb, club, wand, sword, dagger):
+    def __init__(self, boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, wcrab, persbles, clegs, lores, cerb, club, wand, sword, dagger, wcrab2):
         self.boat1 = boat1
         self.medhead = medhead
         self.m_c = m_c
@@ -9,7 +9,7 @@ class pinv:
         self.kth = kth
         self.genacc = genacc
         self.food = food
-        self.hcrab = hcrab
+        self.wcrab = wcrab
         self.persbles = persbles
         self.clegs = clegs
         self.lores = lores
@@ -18,6 +18,7 @@ class pinv:
         self.wand = wand
         self.sword = sword
         self.dagger = dagger
+        self.wcrab2 = wcrab2
 
 def main_inventory():
     boat1 = 'no'
@@ -29,7 +30,7 @@ def main_inventory():
     kth = 'no'
     genacc = 'no'
     food = 'no'
-    hcrab = 'no'
+    wcrab = 'no'
     persbles = 'no'
     clegs = 'no'
     lores = 'no'
@@ -38,7 +39,8 @@ def main_inventory():
     wand = 'no'
     sword = 'no'
     dagger = 'no'
-    minv = pinv(boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, hcrab, persbles, clegs, lores, cerb, club, wand,sword, dagger)
+    wcrab2 = 'no'
+    minv = pinv(boat1, medhead, m_c, phat, Sharkfin, gweapon, kth, genacc, food, wcrab, persbles, clegs, lores, cerb, club, wand,sword, dagger, wcrab2)
     return minv
 
 minv = main_inventory()
