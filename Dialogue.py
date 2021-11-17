@@ -31,11 +31,11 @@ from time import sleep
 
 
 def trader():  # place in starting village (assuming its the first NPC the player meets)
-    print("Traveler, welcome to these graceful lands there are many adventures that await")
+    print("\nTraveler, welcome to these graceful lands there are many adventures that await")
     sleep(1)
-    print("I am the traveling trader looking for my way into the Castle Town to sell my goods")
+    print("\nI am the traveling trader looking for my way into the Castle Town to sell my goods")
     sleep(1)
-    ta = input("Would you like to take a look at my inventory? yes or no?")
+    ta = input("\nWould you like to take a look at my inventory? yes or no?")
     if ta == "yes":
         print("Very well then..")
         sleep(1)
@@ -43,7 +43,6 @@ def trader():  # place in starting village (assuming its the first NPC the playe
     elif ta == "no":
         print("We'll meet at a later date goodbye for now new friend.")
         sleep(1)
-        village()
     else:
         print("Seems to me like you did not understand me at all... ")
         sleep(1)
@@ -63,7 +62,6 @@ def blacksmith():  # place in starting village after trader dialogue
     elif ba == "no":
         print("Farewell traveler")
         sleep(1)
-        village()
     else:
         print("For goodness sakes are you deaf, I guess I'll repeat myself..")
         blacksmith()
@@ -81,11 +79,6 @@ def yggdrasil():  # Make it sound like an old wise man telling stories about pas
 
 def maze_boss():  # we need to find name for boss. Make it a gorgon... totally not what medusa is... LOREEEEEEE! WE STICK TO LORE HERE
     print("You navigate a maze well, good luck defeating me")
-    # initate battle
-    # if 'gorgon' won
-    print("you tried your best your beautiful soul is now mine")
-    # if 'gorgon' loses
-    print("arrrrggg... your much better then the others traveler... be aware of whats to come")
 
 
 def cetus_boss():  # boss spot in cthullu
@@ -94,9 +87,9 @@ def cetus_boss():  # boss spot in cthullu
     print("These waters work in my favor, good luck in this battle..")
     #initate battle
     #if cetus wins
-    print("These waters are my home, I know them better muhahaha")
+
     #if cetus loses
-    print("NOOOO! How? Why? UGGHGGHGHGHGH")
+
 
 
 
@@ -111,9 +104,8 @@ def generic_villian_name_here():  # boss spot in forbidden seas, evil pirate
     sleep(1)
     #initate fight
     #if gvnh wins
-    print("You were no match, have fun in the underworld traveler.")
+
     #if gvnh loses
-    print("You bested me, no one has ever... done.... that...")
 
 
 def castle_trader():  # place in castle village
@@ -145,13 +137,19 @@ def chasm_boss():#"Darkness" name of boss, place in mysterious chasm., spits out
     sleep(2)
     #iniate fight
     #if darkness wins
-    print("Another traveler scared of the dark, eternal rest is your fate now..")
     #if darkness loses
-    print("No, no, no, no, no... This can't be happening!!! For your triumph over me you get (generic item)")
 
 
 def persephone():  # place in persephone's pass, john want to give this a shot at the dialogue
-
+    print("Oh a Traveler? Ive heard rumors that there was a new traveler in these lands.")
+    print("I do not wish to fight but im sure the god of this land would be mad at me if I didn't.")
+    print("Dont worry for this will end quickly.")
+    sleep(2)
+    # iniate fight
+    # if persephone wins
+    print("Im sorry. I did now wish to do this to you. Rest easy I will bring you back to the village.")
+    #make character go to village
+    # if Persephone loses
 
 def pirates():  # place in port
     print("Welcome to the ports adventurer, what brings you around these waters??")
@@ -221,8 +219,10 @@ def thief():  # put in slums when swiping "random number 5-10" gold or coins fro
 
 def boss1():  # main story boss 'the great weasel'
     print("You see a large shadow filling the wall ahead of you, you shake with fear.")
-    print("Emerges, The Great Weasel from his den.")
     sleep(1)
+    print("Emerges, The Great Weasel from his den and you see a regular sized Weasel.")
+    sleep(1)
+    print("Suddenly you are less worried.")
     print('"Welcome traveler, I see you have almost taken over this whole land. I am The Great Weasel,')
     print(' my lords great protector. I will not let you take his land!"')
     sleep(1)
@@ -236,3 +236,26 @@ def boss1():  # main story boss 'the great weasel'
 
 
 def hades():  # EE boss John write your characters dialog you know it best
+    print("You enter the castles main hall.")
+    sleep(1)
+    print('The room is full of fire, almost like you just returned to hell.')
+    sleep(1)
+    print('Cerberus howls and runs to greet the man in the chair.')
+    print("The man is Hades God of the Underworld")
+    sleep(1)
+    print('"Welcome, It must have ben a long journey here young traveler.')
+    print('However, You have conquered my lands and destroyed what i have built.')
+    sleep(1)
+    print("Get ready! You first battle will not be against me but Cerberus will take you on.")
+    sleep(1)
+    # initate battle of cerb
+    # if "cerb" wins
+    print("Master have I done well? I didnt know this traveler was so WEAK!")
+    # if "cerb" loses
+    print("Rest now Cerberus for it is time for me to exact your revenge")
+    #initaite battle of hades
+    # if "hades" wins
+    print("You cannot truly believe you can beat a GOD do you?!")
+    # if "cerb" loses
+    print("I see you have come farther than anyone has ever expected of you. Here take this and i will return to the underworld.")
+    #give crab

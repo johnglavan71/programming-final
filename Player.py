@@ -14,12 +14,7 @@ def retry():
     classc()
 
 def classc():
-    classchoice = input('Please choose your class.\n'
-                        'Mage : Uses magic to slay your foes in mysterious ways.\n'
-                        'Barbarian : All you know is how to fight.\n'
-                        'Knight : You MUST protect the others.\n'
-                        'Rogue : Stealth and steal is what your best at.\n'
-                        ':')
+    classchoice = 0
     while classchoice != 'Mage' or classchoice != 'Barbarian' or classchoice != 'Knight' or classchoice!= 'Rogue':
         classchoice = input('Please choose your class.\n'
                             'Mage : Uses magic to slay your foes in mysterious ways.\n'
@@ -33,7 +28,7 @@ def classc():
     if classchoice == 'Mage':
         hp = 50
         dfn = 10
-        atk = 100
+        atk = 0
         cur = 100
         p = player(nameme, classchoice, hp, dfn, atk, cur)
     elif classchoice == 'Barbarian':
@@ -64,7 +59,6 @@ print(f'Your class is {p.playclass}.')
 print(f'You have {p.hp} health points.')
 print(f'You do {p.atk} damage.')
 print(f'You block {p.dfn} damage.')
-print(f'You have {p.cur} gold coins.')
-p.hp += 10
-print(p.hp)
+print(f'You have {p.cur} gold coins.\n')
+
 
