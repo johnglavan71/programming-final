@@ -1,5 +1,5 @@
 from Player import p
-
+import Randomizer
 
 class items:
     # type is the class you choose
@@ -27,10 +27,8 @@ def medhead():#oshdfiushdafiwuicsahiueyhcryfcbywubcfysudhaiudhiuahfioa
     dfn = 20
     atk = 0
     mhead = items(nameme, hp, dfn, atk)
-    print('You gained', mhead.name)
-    print(mhead.name,'gives you',mhead.dfn, 'defence.')
     return mhead
-
+mhead=medhead()
 
 
 #ocean
@@ -69,7 +67,7 @@ sfin = Sharkfin()
 #Generic item from the mych randomized
 def gweapon():#sehdifhcifibhsufgcsuyfsiuyfiushfoiushgoihsoiughsoihgsoihgosih
     nameme = '(Generic Weapon)'
-    hp = 0
+    hp = Randomizer.ran110()
     dfn = 0
     atk = 0
     gw = items(nameme, hp, dfn, atk)
@@ -109,7 +107,7 @@ bread = food()
 
 #hades crab lol
 def hcrab():
-    nameme = "Hade's Crab"
+    nameme = "Hades Crab"
     hp = 0
     dfn = 0
     atk = 0

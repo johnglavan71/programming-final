@@ -1,6 +1,7 @@
 from Monsters import m1,m2,m3,m4,m5,m6,m7,b1,b2,b3,b4,b5,B5,b6,b7
 from Player import p
 from time import sleep
+from Items import *
 
 
 def fight1():
@@ -111,6 +112,11 @@ def mazef():
 
         print("Arrrrggg... your much better then the others traveler... be aware of whats to come")
         p.cur += b1.cur
+        minv.medhead = "yes"
+        print('You received', {mhead.name})
+        p.hp += mhead.hp
+        p.atk += mhead.atk
+        p.dfn += mhead.dfn
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
     elif fight == "N":
@@ -147,6 +153,7 @@ def crabf():
                 return f
 
         print('You have won this battle!')
+        #crablegs here still not a callable item or variable yet
         p.cur += m3.cur
         print(f'You now have {p.cur} gold coins!\n')
     elif fight == "N":
@@ -378,6 +385,8 @@ def cetusf():
                 return f
 
         print("NOOOO! How? Why? UGGHGGHGHGHGH")
+        print(f'You harvested cetus\'s fin and now have {sfin.name}')
+        #Add in stats for the fin here
         p.cur += b2.cur
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
@@ -415,6 +424,7 @@ def genvilf():
                 return f
 
         print("You bested me, no one has ever... done.... that...")
+        minv.phat = 'yes'
         p.cur += b3.cur
         print(f'You now have {p.cur} gold coins!\n')
         return p.cur
