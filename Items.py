@@ -111,18 +111,18 @@ def wcrab():
     hp = (0-1000000)
     dfn = (0-1000000)
     atk = (0-1000000)
-    hc = items(nameme, hp, dfn, atk)
-    return hc
-hc = wcrab()
+    wc = items(nameme, hp, dfn, atk)
+    return wc
+wc = wcrab()
 
 def wcrab2():
     nameme = "Weasel's Super Friend"
     hp = ran1001000
     dfn = ran1001000
     atk = ran1001000
-    hc = items(nameme, hp, dfn, atk)
-    return hc
-hc = wcrab2()
+    wc2 = items(nameme, hp, dfn, atk)
+    return wc2
+wc2 = wcrab2()
 
 #mountains
 #from pp

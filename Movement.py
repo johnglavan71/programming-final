@@ -1,6 +1,9 @@
 from time import sleep
 import Dialogue
 import Fights
+from Items import *
+from Player import p
+
 
 #village    John
 
@@ -86,8 +89,12 @@ def dt():
     else:
         wtg = input("where would you like to go? sandy shore (ss), misty marsh (mm), maze, yggdrasil (y) : ")
         if wtg == "ss":
-            ocean()
-            ss()
+            if minv.boat1 == 'no':
+                print('you should go get a boat!')
+                dt()
+            else:
+                ocean()
+                ss()
         elif wtg == 'mm':
             marsh()
             mm()
@@ -98,7 +105,7 @@ def dt():
         else:
             print('you walked off the path follow the moss back to the path!!')
             sleep(2)
-            drg()
+            dt()
 
 
 def y():
@@ -106,8 +113,12 @@ def y():
     sleep(2)
     wtg = input("Where would you like to go? Cetus's Domain (cd), Dense Thicket (dt), Dark Root Garden (drg) : ")
     if wtg == "cd":
-        ocean()
-        cd()
+        if minv.boat1 == 'no':
+            print('You dont have a boat.')
+            y()
+        else:
+            ocean()
+            cd()
     elif wtg == 'dt':
         dt()
     elif wtg == 'drg':
@@ -148,11 +159,24 @@ def cd():
 def cr():
     print("You look into the ocean and see beautiful colors and lots of fish. Maybe you should go take a swim!")
     sleep(2)
-    wtg = input("Where would you like to go? Deep Dark (dd), Cetus's Domain (cd) : ")
+    wtg = input("Where would you like to go? Deep Dark (dd), Cetus's Domain (cd), Go for a swim (Swim) : ")
     if wtg == 'dd':
         dd()
     elif wtg == "cd":
         cd()
+    elif wtg =="swim":
+        print('The reef has so many colorful fish and coral.')
+        sleep(1)
+        if minv.m_c == "yes":
+            print('You already collected the best shell')
+        elif minv.m_c == 'no':
+            print('You pickup the best looking shell and take it with you.')
+            minv.m_c = 'yes'
+            print('You received', {mc.name})
+            p.hp += mc.hp
+            p.atk += mc.atk
+            p.dfn += mc.dfn
+            sleep(1)
     else:
         print("You fell off the boat get back on quick!!!")
         sleep(2)
@@ -364,15 +388,18 @@ def wt():
 def zp():
     print("There is a storm at the top of the mountain and lightning keeps striking the same spot. I guess thats why its called Zues' peak.")
     sleep(2)
-    wtg = input("Where would you like to go? Watch Tower (wt), Persephone's Pass (pp) : ")
-    if wtg == 'wt':
-        wt()
-    elif wtg == "pp":
-        pp()
+    if minv.Sharkfin == "yes" and minv.phat == "yes" and minv.medhead == "yes" and minv.gweapon == "yes" and minv.persbles == "yes":
+        print("You have defeated the most powerful creatures in the land, it is time for your next battle.")
     else:
-        print("Watch your step, Hades lurks below...")
-        sleep(2)
-        zp()
+        wtg = input("Where would you like to go? Watch Tower (wt), Persephone's Pass (pp) : ")
+        if wtg == 'wt':
+            wt()
+        elif wtg == "pp":
+            pp()
+        else:
+            print("Watch your step, Hades lurks below...")
+            sleep(2)
+            zp()
 
 
 def pp():
@@ -385,7 +412,7 @@ def pp():
         print("Watch your step, Hades lurks below...")
         sleep(2)
         pp()
-        wtg = input("Where would you like to go? Zeus' Peak (zp), Iron Mills (im) : ")
+        wtg = input("Where would you like to go? Zeus' Peak (zp), Iron Mines (im) : ")
         if wtg == 'zp':
             zp()
         elif wtg == "im":
@@ -393,7 +420,7 @@ def pp():
         else:
             print("Watch your step, Hades lurks below...")
             sleep(2)
-            dd()
+            pp()
 
 
 def im():
@@ -415,7 +442,7 @@ def im():
         else:
             print("Watch your step, Hades lurks below...")
             sleep(2)
-            ss()
+            im()
 
 
 #Castle Town    Chris and John
@@ -480,5 +507,35 @@ def nobles():
         sleep(2)
         nobles()
 
+
+def weasel():
+    win = Fights.weaself()
+    if win == 'f':
+        minv.boat1 = 'no'
+        minv.medhead = 'no'
+        minv.m_c = 'no'
+        minv.phat = 'no'
+        minv.Sharkfin = 'no'
+        minv.gweapon = 'no'
+        minv.kth = 'no'
+        minv.genacc = 'no'
+        minv.food = 'no'
+        minv.hcrab = 'no'
+        minv.persbles = 'no'
+        minv.lores = 'no'
+        minv.cerb = 'no'
+        minv.club = 'no'
+        minv.wand = 'no'
+        minv.sword = 'no'
+        minv.dagger = 'no'
+        p.hp = 10
+        p.dfn = 0
+        p.atk = 1
+        p.cur = 5
+        p.bsmith = 1
+        print('You got royally fucked and lost everything including your stats.')
+        village()
+    else:
+        wt()
 
 village()
