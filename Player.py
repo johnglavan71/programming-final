@@ -55,7 +55,7 @@ def classc():
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'admin':
-        playclass = Mage
+        playclass = 'Mage'
         hp = 1000000000
         dfn = 100000000
         atk = 100000000
