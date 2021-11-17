@@ -23,7 +23,7 @@ def classc():
                             'Knight : You MUST protect the others.\n'
                             'Rogue : Stealth and steal is what your best at.\n'
                             ':')
-        if classchoice == 'Mage' or classchoice == 'Barbarian' or classchoice == 'Knight' or classchoice== 'Rogue':
+        if classchoice == 'Mage' or classchoice == 'Barbarian' or classchoice == 'Knight' or classchoice== 'Rogue' or classchoice == 'admin':
             break
 
     if classchoice == 'Mage':
@@ -54,6 +54,15 @@ def classc():
         cur = 100
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
+    elif classchoice == 'admin':
+        playclass = Mage
+        hp = 1000000000
+        dfn = 100000000
+        atk = 100000000
+        cur = 100000000
+        bsmith = 0
+        p = player(nameme, playclass, hp, dfn,atk,cur,bsmith)
+
 
     return p
 

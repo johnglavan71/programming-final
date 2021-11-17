@@ -382,7 +382,7 @@ def cg():
         elif wtg == 'gb':
             gb()
         elif wtg == 'hell' or wtg == 'Hell':
-            if minv.cerb = 'yes'
+            if minv.cerb == 'yes':
                 print('You have no reason to go back.')
                 cg()
             else:
@@ -525,15 +525,19 @@ def cv():
 def c():
     print("As The Castle doors open, the lights seem to dissapear as the candle lit hallways invte you in.")
     sleep(2)
-    wtg = input("Where would you like to go? Castle Village (cv), Nobles : ")
-    if wtg == 'cv':
-        cv()
-    elif wtg == "Nobles":
-        nobles()
-    else:
-        print("The castle hallway seems to loop in on itself.")
-        sleep(2)
+    if minv.cerb == 'yes':
+        Fights.cerbf()
         c()
+    else:
+        wtg = input("Where would you like to go? Castle Village (cv), Nobles : ")
+        if wtg == 'cv':
+            cv()
+        elif wtg == "Nobles":
+            nobles()
+        else:
+            print("The castle hallway seems to loop in on itself.")
+            sleep(2)
+            c()
 
 
 def nobles():
