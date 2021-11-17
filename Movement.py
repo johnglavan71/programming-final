@@ -3,6 +3,8 @@ import Dialogue
 import Fights
 
 #village    John
+
+
 def village():
     print('Welcome to the the quaint little village of (Insert generic village name here). We hope you enjoy your stay!\n')
     sleep(2)
