@@ -350,7 +350,7 @@ def pp():
     else:
         print("Watch your step, Hades lurks below...")
         sleep(2)
-        dd()
+        pp()
 
 
 def im():
@@ -365,7 +365,7 @@ def im():
     else:
         print("Watch your step, Hades lurks below...")
         sleep(2)
-        ss()
+        im()
 
 
 #Castle Town    Chris and John
@@ -386,7 +386,7 @@ def slums():
     else:
         print("You feel like your being watched... but nobodys there.")
         sleep(2)
-        wt()
+        slums()
 
 
 def cv():
@@ -414,7 +414,7 @@ def c():
     else:
         print("The castle hallway seems to loop in on itself.")
         sleep(2)
-        dd()
+        c()
 
 
 def nobles():
