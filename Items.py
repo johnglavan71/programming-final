@@ -198,6 +198,3 @@ def dagger():
     rd = items(nameme, hp, dfn, atk)
     return rd
 rd = dagger()
-
-print(rd.atk)
-print(rd.name)
