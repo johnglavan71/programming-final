@@ -272,9 +272,9 @@ def trader_inventory():
             print(f'It will provide you with {stick.hp} hp.')
             print(f'It gives {stick.dfn} defence.')
             print(f'The spell the wand comes with will do {stick.atk} damage.')
-            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            buy = input('It will cost you 10 gold coins. Do you want to buy it? Y/N : ')
             if buy == 'Y' or buy == 'y':
-                if p.cur < 100:
+                if p.cur < 10:
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
@@ -285,8 +285,8 @@ def trader_inventory():
                     else:
                         print('You must not have heard my right.')
                         trader_inventory()
-                elif p.cur >= 100:
-                    p.cur -= 100
+                elif p.cur >= 10:
+                    p.cur -= 10
                     minv.wand = 'yes'
                     p.hp += stick.hp
                     p.atk += stick.atk
@@ -311,9 +311,9 @@ def trader_inventory():
             print(f'It will provide you with {wc.hp} hp.')
             print(f'It gives {wc.dfn} defence.')
             print(f'This basic club will do {wc.atk} damage.')
-            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            buy = input('It will cost you 10 gold coins. Do you want to buy it? Y/N : ')
             if buy == 'Y' or buy == 'y':
-                if p.cur < 100:
+                if p.cur < 10:
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
@@ -324,8 +324,8 @@ def trader_inventory():
                     else:
                         print('You must not have heard my right.')
                         trader_inventory()
-                elif p.cur >= 100:
-                    p.cur -= 100
+                elif p.cur >= 10:
+                    p.cur -= 10
                     minv.club = 'yes'
                     p.hp += wc.hp
                     p.atk += wc.atk
@@ -350,9 +350,9 @@ def trader_inventory():
             print(f'It will provide you with {ts.hp} hp.')
             print(f'It gives {ts.dfn} defence.')
             print(f'This sword can do {ts.atk} damage.')
-            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            buy = input('It will cost you 10 gold coins. Do you want to buy it? Y/N : ')
             if buy == 'Y' or buy == 'y':
-                if p.cur < 100:
+                if p.cur < 10:
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
@@ -363,8 +363,8 @@ def trader_inventory():
                     else:
                         print('You must not have heard my right.')
                         trader_inventory()
-                elif p.cur >= 100:
-                    p.cur -= 100
+                elif p.cur >= 10:
+                    p.cur -= 10
                     minv.sword = 'yes'
                     p.hp += ts.hp
                     p.atk += ts.atk

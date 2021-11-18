@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8226e215-5acb-4b7c-ad38-cb32b8e8cc29" name="Changes" comment="Fixed monster attacking after you kill it">
+    <list default="true" id="8226e215-5acb-4b7c-ad38-cb32b8e8cc29" name="Changes" comment="fuck itjkgkjhgkjhgkjhgk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dialogue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fights.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fights.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monsters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monsters.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Movement" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="211jHcKDJbF3iwar13T2HDby72Q" />
@@ -22,19 +29,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.Movement">
+  <component name="RunManager" selected="Python.Fights">
     <configuration name="Fights" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="programming-final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\johng\AppData\Local\Programs\Python\Python310\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fights.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -45,15 +52,15 @@
       <method v="2" />
     </configuration>
     <configuration name="Movement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="programming-final" />
+      <module name="Edits" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\johng\AppData\Local\Programs\Python\Python310\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Movement.py" />
@@ -67,8 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Movement" />
         <item itemvalue="Python.Fights" />
+        <item itemvalue="Python.Movement" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637117425980</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fuck itjkgkjhgkjhgkjhgk">
+      <created>1637194817239</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637194817239</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,9 +129,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed monster attacking after you kill it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed monster attacking after you kill it" />
+    <MESSAGE value="fuck it" />
+    <MESSAGE value="fuck itjkgkjhgkjhgkjhgk" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuck itjkgkjhgkjhgkjhgk" />
   </component>
 </project>

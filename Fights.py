@@ -4,23 +4,25 @@ from time import sleep
 from Items import *
 from Randomizer import *
 
+
 def fight1():
+    mhp = m1.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print('The villagers send you to fight off a giant rat!')
-    print(f'The rat has {m1.hp} hp.')
+    print(f'The rat has {mhp} hp.')
     matk = m1.atk - p.dfn
     print('Monster does', matk, 'damage.')
     patk = p.atk - m1.dfn
     print('You do', patk,'damage.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y':
-        while m1.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m1.hp -= patk
-            print(f'Monster has {m1.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m1.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -28,7 +30,7 @@ def fight1():
             sleep(3)
             if php <= 0:
                 print('You have lost! One of the villagers take you back to their home.')
-                m1.hp = 0
+                mhp = 0
                 return None
 
         print('You have won this battle!')
@@ -36,24 +38,27 @@ def fight1():
         print(f'You now have {p.cur} gold coins!')
         print(f'You have been returned to {p.hp} health. This will happen after every battle.')
         return p.cur
+fight1()
+
 
 def fight2():
+    mhp = m2.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {m2.type} named {m2.name}.')
-    print(f'It has {m2.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = m2.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - m2.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while m2.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m2.hp -= patk
-            print(f'Monster has {m2.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m2.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -61,7 +66,7 @@ def fight2():
             sleep(3)
             if php <= 0:
                 print('You have lost! When one of the villagers goes out for a walk they find you asleep in the woods.')
-                m2.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -83,22 +88,23 @@ def fight2():
         return p.cur
 
 def mazef():
+    mhp = b1.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b1.type} named {b1.name}..')
-    print(f'She has {b1.hp} hp.')
+    print(f'She has {mhp} hp.')
     matk = b1.atk - p.dfn
     print('She does', matk, 'damage.')
     patk = p.atk - b1.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while b1.hp > 0:
+        while mhp > 0:
             print(f'You attack the {b1.type}.\n You deal {patk} damage.')
-            b1.hp -= patk
-            print(f'{b1.name} has {b1.hp} hp left.\n')
+            mhp -= patk
+            print(f'{b1.name} has {mhp} hp left.\n')
             sleep(3)
-            if b1.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'{b1.name} attacks.\n She deals {matk} damage.')
             php -= matk
@@ -106,7 +112,7 @@ def mazef():
             sleep(3)
             if php <= 0:
                 print("You tried your best. Your beautiful soul is now mine")
-                b1.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -125,22 +131,23 @@ def mazef():
 
 
 def crabf():
+    mhp = m3.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {m3.type} named {m3.name}.')
-    print(f'It has {m3.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = m3.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - m3.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while m3.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m3.hp -= patk
-            print(f'Monster has {m3.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m3.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -148,7 +155,7 @@ def crabf():
             sleep(3)
             if php <= 0:
                 print('You have lost! When one of the villagers goes out for a walk they find you asleep in the woods.')
-                m3.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -177,22 +184,23 @@ def crabf():
 
 
 def sharkf():
+    mhp = m4.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {m4.type} named {m4.name}.')
-    print(f'It has {m4.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = m4.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - m4.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while m4.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m4.hp -= patk
-            print(f'Monster has {m4.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m4.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -201,7 +209,7 @@ def sharkf():
             if php <= 0:
                 print('You fall out of your boat and the waves wash you ashore.')
                 minv.boat1 = 'no'
-                m4.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -224,22 +232,23 @@ def sharkf():
 
 
 def kobaldf():
+    mhp = m5.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {m5.type} named {m5.name}.')
-    print(f'It has {m5.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = m5.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - m5.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while m5.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m5.hp -= patk
-            print(f'Monster has {m5.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m5.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -247,7 +256,7 @@ def kobaldf():
             sleep(3)
             if php <= 0:
                 print('You have lost! When one of the villagers goes out for a walk they find you asleep in the woods.')
-                m5.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -270,22 +279,23 @@ def kobaldf():
 
 
 def hydraf():
+    mhp = m6.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {m6.type} named {b2.name}.')
-    print(f'It has {m6.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = m6.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - m6.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while m6.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m6.hp -= patk
-            print(f'Monster has {m6.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m6.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -293,7 +303,7 @@ def hydraf():
             sleep(3)
             if php <= 0:
                 print('You have lost! When one of the villagers goes out for a walk they find you asleep in the woods.')
-                m6.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -317,22 +327,23 @@ def hydraf():
 
 
 def lizardf():
+    mhp = m7.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {m7.type} named {m7.name}.')
-    print(f'It has {m7.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = m7.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - m7.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while m7.hp > 0:
+        while mhp > 0:
             print(f'You attack the monster.\n You deal {patk} damage.')
-            m7.hp -= patk
-            print(f'Monster has {m7.hp} hp left.\n')
+            mhp -= patk
+            print(f'Monster has {mhp} hp left.\n')
             sleep(3)
-            if m7.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'The monster attacks.\n It deals {matk} damage.')
             php -= matk
@@ -340,7 +351,7 @@ def lizardf():
             sleep(3)
             if php <= 0:
                 print('You have lost! When one of the villagers goes out for a walk they find you asleep in the woods.')
-                m7.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -363,6 +374,7 @@ def lizardf():
 
 
 def cetusf():
+    mhp = b2.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b2.type} named {b2.name}..')
@@ -373,12 +385,12 @@ def cetusf():
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while b2.hp > 0:
+        while mhp > 0:
             print(f'You attack the {b2.type}.\n You deal {patk} damage.')
-            b2.hp -= patk
+            mhp -= patk
             print(f'{b2.name} has {b2.hp} hp left.\n')
             sleep(3)
-            if b2.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'{b2.name} attacks.\n He deals {matk} damage.')
             php -= matk
@@ -386,7 +398,7 @@ def cetusf():
             sleep(3)
             if php <= 0:
                 print("These waters are my home, I know them better muhahaha")
-                b2.hp = 0
+                mhp = 0
                 print('Your boat was destroyed in the fight.')
                 minv.boat1 = 'no'
                 f = 'f'
@@ -409,22 +421,23 @@ def cetusf():
 
 
 def genvilf():
+    mhp = b3.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b3.type} named {b3.name}..')
-    print(f'It has {b3.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = b3.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - b3.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while b3.hp > 0:
+        while mhp > 0:
             print(f'You attack the {b3.type}.\n You deal {patk} damage.')
-            b3.hp -= patk
-            print(f'{b3.name} has {b3.hp} hp left.\n')
+            mhp -= patk
+            print(f'{b3.name} has {mhp} hp left.\n')
             sleep(3)
-            if b3.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'{b3.name} attacks.\n It deals {matk} damage.')
             php -= matk
@@ -434,7 +447,7 @@ def genvilf():
                 print("You were no match, have fun in the underworld traveler.")
                 minv.boat1 = "no"
                 print("Your boat was destroyed in the fight.")
-                b3.hp = 0
+                mhp = 0
                 f = 'f'
                 return f
 
@@ -454,22 +467,23 @@ def genvilf():
 
 
 def persephonef():
+    mhp = b4.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b4.type} named {b4.name}..')
-    print(f'She has {b4.hp} hp.')
+    print(f'She has {mhp} hp.')
     matk = b4.atk - p.dfn
     print('She does', matk, 'damage.')
     patk = p.atk - b4.dfn
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while b4.hp > 0:
+        while mhp > 0:
             print(f'You attack the {b4.type}.\n You deal {patk} damage.')
-            b4.hp -= patk
-            print(f'{b4.name} has {b4.hp} hp left.\n')
+            mhp -= patk
+            print(f'{b4.name} has {mhp} hp left.\n')
             sleep(3)
-            if b4.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'{b4.name} attacks.\n She deals {matk} damage.')
             php -= matk
@@ -496,22 +510,23 @@ def persephonef():
 
 
 def darknessf():
+    mhp = b7.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b7.type} named {b7.name}..')
-    print(f'It has {b7.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = b7.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - b7.dfn
     print('You do', patk, 'damage, and have', php, 'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':
-        while b7.hp > 0:
+        while mhp > 0:
             print(f'You attack the {b7.type}.\n You deal {patk} damage.')
-            b7.hp -= patk
-            print(f'{b7.name} has {b7.hp} hp left.\n')
+            mhp -= patk
+            print(f'{b7.name} has {mhp} hp left.\n')
             sleep(3)
-            if b7.hp <= 0:
+            if mhp <= 0:
                 break
             print(f'{b7.name} attacks.\n It deals {matk} damage.')
             php -= matk
@@ -537,10 +552,11 @@ def darknessf():
         darknessf()
 
 def weaself():
+    mhp = b6.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b6.type} named {b6.name}..')
-    print(f'The Great Weasel has {b6.hp} hp.')
+    print(f'The Great Weasel has {mhp} hp.')
     matk = b6.atk - p.dfn
     print('The Great Weasel does', matk, 'damage.')
     patk = p.atk - b6.dfn
@@ -548,7 +564,7 @@ def weaself():
     print("Are you ready!?")
     sleep(5)
     print('Things are going to be different. Im sure your used to attacking first huh?')
-    while b6.hp > 0:
+    while mhp > 0:
         print(f'{b6.name} attacks.\n It deals {matk} damage.')
         php -= matk
         print(f'You have {php} hp left.\n')
@@ -558,10 +574,10 @@ def weaself():
             f = 'f'
             return f
         pr0int(f'You attack the {b6.type}.\n You deal {patk} damage.')
-        b6.hp -= patk
-        print(f'{b6.name} has {b6.hp} hp left.\n')
+        mhp -= patk
+        print(f'{b6.name} has {mhp} hp left.\n')
         sleep(3)
-        if b6.hp <= 0:
+        if mhp <= 0:
             break
     print("'You will never take my lords land! He will live on forever!'")
     sleep(2)
@@ -591,15 +607,16 @@ def weaself():
     return p.cur
 
 def Cerbf():
+    mhp = B5.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {B5.type} named {B5.name}..')
-    print(f'It has {B5.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = B5.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - B5.dfn
     print('You do', patk, 'damage, and have', php, 'hp.')
-    while B5.hp > 0:
+    while mhp > 0:
         print(f'{B5.name} attacks.\n It deals {matk} damage.')
         php -= matk
         print(f'You have {php} hp left.\n')
@@ -625,10 +642,10 @@ def Cerbf():
             f = 'f'
             return f
         print(f'You attack the {B5.type}.\n You deal {patk} damage.')
-        B5.hp -= patk
-        print(f'{B5.name} has {B5.hp} hp left.\n')
+        mhp -= patk
+        print(f'{B5.name} has {mhp} hp left.\n')
         sleep(3)
-        if B5.hp <= 0:
+        if mhp <= 0:
             break
     print("Rest now Cerberus for it is time for me to exact your revenge")
     Hadesf()
@@ -636,15 +653,16 @@ def Cerbf():
 
 
 def Hadesf():
+    mhp = b5.hp
     php = p.hp
     print(f'You have {p.hp} health.')
     print(f'You run into a {b5.type} named {b5.name}..')
-    print(f'It has {b5.hp} hp.')
+    print(f'It has {mhp} hp.')
     matk = b5.atk - p.dfn
     print('It does', matk, 'damage.')
     patk = p.atk - b5.dfn
     print('You do', patk, 'damage, and have', php, 'hp.')
-    while b5.hp > 0:
+    while mhp > 0:
         print(f'{b5.name} attacks.\n It deals {matk} damage.')
         php -= matk
         print(f'You have {php} hp left.\n')
@@ -654,10 +672,10 @@ def Hadesf():
             f = 'f'
             return f
         print(f'You attack the {b5.type}.\n You deal {patk} damage.')
-        b5.hp -= patk
-        print(f'{b5.name} has {b5.hp} hp left.\n')
+        mhp -= patk
+        print(f'{b5.name} has {mhp} hp left.\n')
         sleep(3)
-        if b5.hp <= 0:
+        if mhp <= 0:
             break
     print("I see you have come farther than anyone has ever expected of you. Here take this and i will return to the underworld.")
     print('Congrats You BEAT the game!!!!!! WOO Hope we wasted your time with the weasel!')
