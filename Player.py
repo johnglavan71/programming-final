@@ -27,35 +27,35 @@ def classc():
             break
 
     if classchoice == 'Mage':
-        hp = 10
+        hp = 5
         dfn = 0
         atk = 1
         cur = 5
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Barbarian':
-        hp = 10
+        hp = 5
         dfn = 0
-        atk = 150
-        cur = 100
+        atk = 1
+        cur = 5
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Knight':
-        hp = 100
-        dfn = 50
-        atk = 125
-        cur = 100
+        hp = 5
+        dfn = 0
+        atk = 1
+        cur = 5
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'Rogue':
-        hp = 10
-        dfn = 10
-        atk = 100
-        cur = 100
+        hp = 5
+        dfn = 0
+        atk = 1
+        cur = 5
         bsmith = 1
         p = player(nameme, classchoice, hp, dfn, atk, cur, bsmith)
     elif classchoice == 'admin':
-        playclass = 'Mage'
+        playclass = 'Rogue'
         hp = 1000000000
         dfn = 100000000
         atk = 100000000
