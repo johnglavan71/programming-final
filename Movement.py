@@ -1,6 +1,7 @@
 from time import sleep
 import Dialogue
 import Fights
+from Inventory import minv
 from Items import *
 from Player import p
 import Maze
@@ -125,6 +126,7 @@ def dt():
 def y():
     print('The tree feels like its trying to talk to you. Maybe you should touch it.')
     sleep(2)
+    Dialogue.yggdrasil()
     wtg = input("Where would you like to go? Cetus's Domain (cd), Dense Thicket (dt), Dark Root Garden (drg) : ")
     if wtg == "cd":
         if minv.boat1 == 'no':
@@ -598,4 +600,4 @@ def weasel():
     else:
         wt()
 
-maze()
+village()

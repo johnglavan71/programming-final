@@ -81,7 +81,7 @@ def yggdrasil():  # Make it sound like an old wise man telling stories about pas
     sleep(1)
     print("I've seen many travelers like you move through these parts in search of justice, you look kind maybe i can help you out")
     sleep(1)
-    print("Here is a token for your kindness, to help you sail these treterous waters")
+    print("Here is a token for your kindness, to help you sail these treacherous waters")
     minv.boat1 = 'yes'
     sleep(1)
 
@@ -389,9 +389,9 @@ def trader_inventory():
             print(f'It will provide you with {rd.hp} hp.')
             print(f'It gives {rd.dfn} defence.')
             print(f'You brand new knife should do {rd.atk} damage.')
-            buy = input('It will cost you 100 gold coins. Do you want to buy it? Y/N : ')
+            buy = input('It will cost you 10 gold coins. Do you want to buy it? Y/N : ')
             if buy == 'Y' or buy == 'y':
-                if p.cur < 100:
+                if p.cur < 10:
                     print('You do not have enough money for that. I suggest that you go onto your first quest.')
                     go = input('Do you want to go onto your first quest? Y/N : ')
                     if go == 'Y' or go == 'y':
@@ -402,8 +402,8 @@ def trader_inventory():
                     else:
                         print('You must not have heard my right.')
                         trader_inventory()
-                elif p.cur >= 100:
-                    p.cur -= 100
+                elif p.cur >= 10:
+                    p.cur -= 10
                     minv.dagger = 'yes'
                     p.hp += rd.hp
                     p.atk += rd.atk + 5 #added 5 for poison damage because of the rust

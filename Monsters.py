@@ -25,8 +25,8 @@ m1 = villagemonster()
 def forsetmonster():
     name = 'Lykaion'
     type = 'Wolf'
-    hp = 150
-    dfn = 5
+    hp = 30
+    dfn = 0
     atk = 25
     cur = 15
     m2 = monster(name, type, hp, dfn, atk, cur)
@@ -51,7 +51,7 @@ def ddmonster():
     type = 'Shark'
     hp = 200
     dfn = 15
-    atk = 75
+    atk = 25
     cur = 50
     m4 = monster(name, type, hp, dfn, atk, cur)
     return m4
@@ -61,9 +61,9 @@ m4 = ddmonster()
 def ironmonster():
     name = 'Talos'
     type = 'Kobald'
-    hp = 200
-    dfn = 20
-    atk = 100
+    hp = 10
+    dfn = 0
+    atk = 10
     cur = 100
     m5 = monster(name, type, hp, dfn, atk, cur)
     return m5

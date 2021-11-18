@@ -40,7 +40,7 @@ def fight1():
 def fight2():
     php = p.hp
     print(f'You have {p.hp} health.')
-    print(f'You run into a {m2.type} named {b2.name}.')
+    print(f'You run into a {m2.type} named {m2.name}.')
     print(f'It has {m2.hp} hp.')
     matk = m2.atk - p.dfn
     print('It does', matk, 'damage.')
@@ -127,7 +127,7 @@ def mazef():
 def crabf():
     php = p.hp
     print(f'You have {p.hp} health.')
-    print(f'You run into a {m3.type} named {b2.name}.')
+    print(f'You run into a {m3.type} named {m3.name}.')
     print(f'It has {m3.hp} hp.')
     matk = m3.atk - p.dfn
     print('It does', matk, 'damage.')
@@ -179,7 +179,7 @@ def crabf():
 def sharkf():
     php = p.hp
     print(f'You have {p.hp} health.')
-    print(f'You run into a {m4.type} named {b2.name}.')
+    print(f'You run into a {m4.type} named {m4.name}.')
     print(f'It has {m4.hp} hp.')
     matk = m4.atk - p.dfn
     print('It does', matk, 'damage.')
@@ -226,7 +226,7 @@ def sharkf():
 def kobaldf():
     php = p.hp
     print(f'You have {p.hp} health.')
-    print(f'You run into a {m5.type} named {b2.name}.')
+    print(f'You run into a {m5.type} named {m5.name}.')
     print(f'It has {m5.hp} hp.')
     matk = m5.atk - p.dfn
     print('It does', matk, 'damage.')
@@ -569,7 +569,7 @@ def weaself():
     if minv.clegs == 'yes':
         minv.wcrab = 'yes'
         print('You received', {wc.name})
-        print('You smite me ealier so now its my turn to ruin you stats ..l..')
+        print('You smote me earlier so now its my turn to ruin your stats ..l..')
         p.hp += wc.hp
         p.atk += wc.atk
         p.dfn += wc.dfn
