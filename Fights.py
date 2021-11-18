@@ -38,7 +38,6 @@ def fight1():
         print(f'You now have {p.cur} gold coins!')
         print(f'You have been returned to {p.hp} health. This will happen after every battle.')
         return p.cur
-fight1()
 
 
 def fight2():
