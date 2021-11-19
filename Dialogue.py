@@ -61,6 +61,7 @@ def blacksmith():  # place in starting village after trader dialogue
     ba = input(f"Would you like to reforge your weapon it will cost {10 * p.bsmith} gold coins. yes or no : ")
     if ba == "yes":
         if p.cur >= (10 * p.bsmith):
+            p.cur -= (10 * p.bsmith)
             print("You wont be dissapointed!")
             p.bsmith += 1
             sleep(1)
