@@ -126,23 +126,25 @@ def dt():
 def y():
     print('The tree feels like its trying to talk to you. Maybe you should touch it.')
     sleep(2)
-    Dialogue.yggdrasil()
-    wtg = input("Where would you like to go? Cetus's Domain (cd), Dense Thicket (dt), Dark Root Garden (drg) : ")
-    if wtg == "cd":
-        if minv.boat1 == 'no':
-            print('You dont have a boat.')
-            y()
-        else:
-            ocean()
-            cd()
-    elif wtg == 'dt':
-        dt()
-    elif wtg == 'drg':
-        drg()
+    if minv.boat1 == "no":
+        Dialogue.yggdrasil()
     else:
-        print('You walked off the path follow the moss back to the path!!')
-        sleep(2)
-        y()
+        wtg = input("Where would you like to go? Cetus's Domain (cd), Dense Thicket (dt), Dark Root Garden (drg) : ")
+        if wtg == "cd":
+            if minv.boat1 == 'no':
+                print('You dont have a boat.')
+                y()
+            else:
+                ocean()
+                cd()
+        elif wtg == 'dt':
+            dt()
+        elif wtg == 'drg':
+            drg()
+        else:
+            print('You walked off the path follow the moss back to the path!!')
+            sleep(2)
+            y()
 
 
 #Ocean  Chris

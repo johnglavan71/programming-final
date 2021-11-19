@@ -39,7 +39,7 @@ def trader():  # place in starting village (assuming its the first NPC the playe
     sleep(1)
     print("\nI am the traveling trader looking for my way into the Castle Town to sell my goods")
     sleep(1)
-    ta = input("\nWould you like to take a look at my inventory? yes or no?")
+    ta = input("\nWould you like to take a look at my inventory? yes or no? : ")
     if ta == "yes":
         print("Very well then..")
         sleep(1)
