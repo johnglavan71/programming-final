@@ -188,11 +188,12 @@ def cr():
         elif minv.m_c == 'no':
             print('You pickup the best looking shell and take it with you.')
             minv.m_c = 'yes'
-            print('You received', {mc.name})
-            p.hp += mc.hp
-            p.atk += mc.atk
-            p.dfn += mc.dfn
+            print('You received', {fu.name})
+            p.hp += fu.hp
+            p.atk += fu.atk
+            p.dfn += fu.dfn
             sleep(1)
+            cr()
     else:
         print("You fell off the boat get back on quick!!!")
         sleep(2)

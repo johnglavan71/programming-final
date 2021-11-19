@@ -27,7 +27,7 @@ def forsetmonster():
     type = 'Wolf'
     hp = 25
     dfn = 5
-    atk = 5
+    atk = 10
     cur = 15
     m2 = monster(name, type, hp, dfn, atk, cur)
     return m2

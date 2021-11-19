@@ -3,6 +3,7 @@ from Player import p
 from time import sleep
 from Items import *
 from Randomizer import *
+from Inventory import minv
 
 
 def fight1():
@@ -137,7 +138,7 @@ def crabf():
     print(f'It has {mhp} hp.')
     matk = m3.atk - p.dfn
     print('It does', matk, 'damage.')
-    patk = p.atk - m3.dfn
+    patk = p.atk - m3.dfn + 20
     print('You do', patk,'damage, and have', php,'hp.')
     fight = input('Do you wish to fight? Y/N \n: ')
     if fight == 'Y' or fight == 'y':

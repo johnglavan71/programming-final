@@ -38,9 +38,10 @@ def m_c():
     hp = 10
     dfn = 0
     atk = 0
-    mc = items(nameme, hp, dfn, atk)
-    return mc
-mc = m_c()
+    fu = items(nameme, hp, dfn, atk)
+    return fu
+fu = m_c()
+
 
 #pirate hat that comes from the
 def phat():#koishofgiuhsoiufhosihfoishgoishgioesn
